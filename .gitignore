@@ -1,0 +1,203 @@
+/.env
+/.env.*.local
+# Dépendances frontend
+/node_modules/
+/yarn.lock
+/package-lock.json
+# Fichiers de logs
+*.log
+# Fichiers de cache
+# Fichiers de débogage
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers de déploiement
+/.fleet
+/.vscode
+/.vagrant
+/.homestead
+Homestead.json
+Homestead.yaml
+Vagrantfile
+
+# Fichiers de développement local
+/.sass-cache
+/.phpunit.result.cache
+/.phpcs-cache
+/nbproject/
+
+# Fichiers de sauvegarde
+*~
+*.bak
+*.swp
+*.swo
+
+# Fichiers d'environnement
+.env
+.env.*.local
+!.env.example
+
+# Fichiers de test
+/coverage/
+/tests/.phpunit.result.cache
+
+# Fichiers de build
+/public/build/
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# Fichiers de dépendances
+bower_components/
+
+# Fichiers de déploiement
+/.deploy
+/deploy.php
+
+# Fidji
+/.fidji
+
+# IDE
+.idea/
+*.sublime-*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Fichiers temporaires
+*.tmp
+*.temp
+/temp/
+/tmp/
+
+# Fichiers de sauvegarde
+*.bak
+*.swp
+*~.nib
+
+# Fichiers de cache
+.cache/
+.sass-cache/
+
+# Fichiers de dépendances locales
+.phpunit.result.cache
+
+# Fichiers de couverture de code
+/coverage/
+/clover.xml
+
+# Fichiers de déploiement
+/build/
+/dist/
+
+# Fichiers de configuration locaux
+*.local
+
+# Fichiers de dépendances frontend
+/node_modules/
+/bower_components/
+
+# Fichiers de build frontend
+/public/css/
+/public/js/
+/public/mix-manifest.json
+
+# Fichiers de cache PHP
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# Fichiers de session
+/storage/framework/sessions/*
+!storage/framework/sessions/.gitignore
+
+# Fichiers de vues compilées
+/storage/framework/views/*.php
+!storage/framework/views/.gitignore
+
+# Fichiers de cache
+/storage/framework/cache/*
+!storage/framework/cache/.gitignore
+
+# Fichiers de logs
+/storage/logs/*.log
+!storage/logs/.gitignore
+
+# Fichiers de débogage
+/storage/debugbar/
+
+# Fichiers de médias téléchargés
+/public/uploads/
+!public/uploads/.gitkeep
+
+# Fichiers de configuration sensible
+/.env
+/.env.*
+!.env.example
+
+# Fichiers de développement
+/.phpunit.result.cache
+/phpunit.xml
+/phpunit.xml.dist
+
+# Fichiers de couverture de code
+/coverage/
+/clover.xml
+
+# Fichiers de dépendances
+/node_modules/
+/bower_components/
+/vendor/
+
+# Fichiers de build
+/public/build/
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# Fichiers de déploiement
+/.deploy
+/deploy.php
+
+# Fichiers de cache
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# Fichiers de session
+/storage/framework/sessions/*
+!storage/framework/sessions/.gitignore
+
+# Fichiers de vues compilées
+/storage/framework/views/*.php
+!storage/framework/views/.gitignore
+
+# Fichiers de cache
+/storage/framework/cache/*
+!storage/framework/cache/.gitignore
+
+# Fichiers de logs
+/storage/logs/*.log
+!storage/logs/.gitignore
+
+# Fichiers de débogage
+/storage/debugbar/
+
+# Fichiers de médias téléchargés
+/public/uploads/
+!public/uploads/.gitkeep

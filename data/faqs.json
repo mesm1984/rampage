@@ -1,0 +1,563 @@
+{
+    "categories": [
+        {
+            "id": "nutrition",
+            "name": "Nutrition et Hydratation",
+            "questions": [
+                {
+                    "question": "Que manger avant une sortie VTT ?",
+                    "reponse": "Idéalement, prenez un repas 2-3h avant votre sortie : 1) Privilégiez les glucides complexes (pâtes complètes, riz basmati, flocons d'avoine), 2) Ajoutez des protéines maigres (poulet, œufs, tofu), 3) Limitez les graisses et les fibres pour faciliter la digestion, 4) Hydratez-vous bien. Exemple de petit-déjeuner : flocons d'avoine, banane, amandes et yaourt grec.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Quels encas prendre pendant une longue sortie ?",
+                    "reponse": "Pour les sorties de plus d'1h30 : 1) Barres énergétiques (30-60g de glucides/heure), 2) Gels énergétiques (à prendre avec de l'eau), 3) Fruits secs (dattes, abricots), 4) Pâtes de fruits, 5) Boisson isotonique. Astuce : Testez vos encours à l'entraînement avant une compétition pour éviter les mauvaises surprises digestives.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Comment bien s'hydrater à VTT ?",
+                    "reponse": "1) Buvez 500ml d'eau 2h avant la sortie, 2) Pédalez avec 1 à 2 bidons selon la durée, 3) Buvez 150-250ml toutes les 15-20 minutes, 4) Pour les sorties >1h, utilisez une boisson isotonique, 5) Après l'effort, buvez 1,5x le volume perdu en sueur. Attention aux signes de déshydratation : soif, bouche sèche, maux de tête, baisse de performance.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Que manger après une grosse sortie VTT ?",
+                    "reponse": "Dans les 30 minutes après l'effort (fenêtre métabolique) : 1) Protéines pour la récupération musculaire (yaourt grec, œufs, poisson), 2) Glucides pour reconstituer les réserves (riz, pâtes, patates douces), 3) Antioxydants (fruits rouges, légumes colorés), 4) Hydratation (eau riche en minéraux). Exemple : bol de riz, saumon et brocolis + smoothie banane/épinards.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Quels compléments alimentaires pour le VTT ?",
+                    "reponse": "Les compléments utiles : 1) BCAA pour la récupération, 2) Magnésium contre les crampes, 3) Vitamine D si manque d'exposition solaire, 4) Crème de récupération (à base d'arnica), 5) Caféine pour les sorties intenses. Important : Les compléments ne remplacent pas une alimentation équilibrée. Consultez un professionnel de santé avant toute supplémentation.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Comment gérer la nutrition en compétition de VTT ?",
+                    "reponse": "Stratégie pour la compétition : 1) Chargez en glucides 3 jours avant (8-10g/kg de poids), 2) Prenez un petit-déjeuner solide 3h avant, 3) Consommez 60-90g de glucides/heure pendant l'épreuve, 4) Alternez solides et liquides, 5) Testez votre stratégie à l'entraînement. Exemple : 1 gel + 500ml de boisson isotonique/heure + 1/2 barre énergétique.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Quels aliments éviter avant une sortie VTT ?",
+                    "reponse": "À éviter : 1) Aliments gras (fritures, fromages), 2) Fibres en excès (légumineuses, céréales complètes), 3) Aliments trop épicés, 4) Boissons gazeuses, 5) Excès de caféine, 6) Alcool. Ces aliments peuvent causer des troubles digestifs pendant l'effort. Privilégiez les aliments que vous connaissez et que vous avez l'habitude de consommer avant le sport.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Comment adapter son alimentation pour perdre du poids en VTT ?",
+                    "reponse": "Pour une perte de poids saine : 1) Créez un léger déficit calorique (max 500kcal/jour), 2) Mangez des protéines à chaque repas, 3) Privilégiez les glucides à IG bas, 4) Ne sautez pas de repas, 5) Hydratez-vous bien, 6) Évitez les régimes drastiques qui nuisent aux performances. Astuce : Faites du vélo à jeun pour les sorties courtes et peu intenses pour favoriser l'utilisation des graisses.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Quelle alimentation pour les sorties hivernales en VTT ?",
+                    "reponse": "En hiver : 1) Augmentez légèrement l'apport calorique (le froid augmente la dépense énergétique), 2) Privilégiez les boissons chaudes (thé, infusion), 3) Emportez des encours faciles à manger avec des gants, 4) Prévoyez des aliments énergétiques (fruits secs, barres), 5) Hydratez-vous même si vous avez moins soif. Pensez aux soupes thermos pour les longues sorties froides.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Comment éviter les problèmes digestifs à vélo ?",
+                    "reponse": "Pour prévenir les troubles digestifs : 1) Évitez les aliments irritants avant l'effort, 2) Ne mangez pas trop avant de partir, 3) Mangez régulièrement en petites quantités pendant la sortie, 4) Hydratez-vous correctement, 5) Entraînez votre intestin à tolérer la nourriture à l'effort, 6) Évitez les boissons trop concentrées en sucre. Si vous avez souvent des problèmes, consultez un nutritionniste du sport.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Quelle est la meilleure boisson énergétique maison pour le VTT ?",
+                    "reponse": "Voici une recette simple et efficace : 500ml d'eau, 30g de miel ou sirop d'érable, 1/2 cuillère à café de sel, jus d'1/2 citron. Mélangez bien. Cette boisson apporte des glucides rapides, des électrolytes et des antioxydants. À adapter selon la température extérieure et la durée de l'effort.",
+                    "category": "Nutrition et Hydratation"
+                },
+                {
+                    "question": "Comment gérer la nutrition sur une course VTT de plusieurs jours ?",
+                    "reponse": "Stratégie pour une course par étapes : 1) Récupération immédiate après chaque étape (ratio 3:1 glucides/protéines), 2) Repas du soir riche en protéines et glucides complexes, 3) Petit-déjeuner copieux 3h avant le départ, 4) Alimentation solide les premières heures, puis gels/barres, 5) Compléments : BCAA, électrolytes, probiotiques. Testez tout à l'entraînement !",
+                    "category": "Nutrition et Hydratation"
+                }
+            ]
+        },
+        {
+            "id": "general",
+            "name": "Général VTT",
+            "questions": [
+                {
+                    "question": "Quelles sont les pièces principales d'un VTT ?",
+                    "reponse": "Un VTT se compose de plusieurs éléments clés : 1) Le cadre (en aluminium, carbone ou acier), 2) La fourche (suspendue ou rigide), 3) Le groupe de transmission (dérailleurs, cassette, pédalier, chaîne), 4) Les freins (à disque ou V-Brake), 5) Les roues (jantes, rayons, moyeux), 6) Les pneus, 7) La selle et la tige de selle, 8) Le guidon et la potence, 9) Les pédales, 10) La direction (jeu de direction, potence).",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Comment choisir la bonne taille de cadre pour mon VTT ?",
+                    "reponse": "Pour choisir la taille de cadre idéale : 1) Mesurez votre entrejambe, 2) Référez-vous au tableau des tailles du fabricant, 3) Tenez compte de votre morphologie (bras/tronc/jambes), 4) Testez plusieurs tailles si possible, 5) Considérez votre style de pilotage (plus agressif = cadre plus petit, plus confortable = cadre plus grand). En général, la taille se mesure en pouces (S=15-16\", M=17-18\", L=19-20\", XL=21-22\").",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Quels outils sont essentiels pour l'entretien d'un VTT ?",
+                    "reponse": "Les outils essentiels sont : 1) Clés Allen (4-8mm), 2) Clé à rayon, 3) Démonte-pneu, 4) Pompe à vélo avec manomètre, 5) Chaîne à œil, 6) Dérailleur de chaîne, 7) Torx T25, 8) Clé à pédale, 9) Graisse et dégraissant, 10) Pied d'atelier, 11) Clé dynamométrique, 12) Pince coupante, 13) Lubrifiant spécifique VTT, 14) Chiffons microfibres.",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Comment monter son VTT sur mesure ?",
+                    "reponse": "Étapes pour monter un VTT sur mesure : 1) Choisissez un cadre adapté à votre taille et usage, 2) Sélectionnez une fourche adaptée (débattement, axe, type de roue), 3) Choisissez un groupe de transmission adapté à votre pratique, 4) Sélectionnez les roues selon le type de terrain, 5) Ajoutez les composants (pédalier, pédales, selle, cintre, potence), 6) Ajoutez les accessoires (éclairage, garde-boue, porte-bagages si nécessaire). Conseil : Faites appel à un professionnel pour le montage si vous n'êtes pas sûr de vos compétences.",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Quelle est la différence entre un VTT tout-suspendu et un VTT semi-rigide ?",
+                    "reponse": "Un VTT tout-suspendu possède une suspension à l'avant (fourche) et à l'arrière (amortisseur), offrant plus de confort et de contrôle sur terrains accidentés. Un semi-rigide n'a qu'une suspension avant, ce qui le rend plus léger, plus réactif en montée et nécessite moins d'entretien. Le choix dépend de votre pratique : le tout-suspendu est idéal pour la descente et les terrains techniques, tandis que le semi-rigide est plus adapté au cross-country et aux chemins roulants.",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Comment entretenir sa transmission VTT ?",
+                    "reponse": "Pour une transmission optimale : 1) Nettoyez et lubrifiez régulièrement la chaîne, 2) Remplacez la chaîne tous les 2000-3000 km, 3) Vérifiez l'usure des pignons et du plateau, 4) Ajustez les dérailleurs, 5) Contrôlez la tension des câbles, 6) Nettoyez les salissures après chaque sortie boueuse, 7) Vérifiez l'alignement du dérailleur arrière, 8) Remplacez les câbles et gaines si nécessaire.",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Quels sont les différents types de VTT ?",
+                    "reponse": "Les principaux types de VTT sont : 1) Cross-country (XC) : léger et efficace pour la montée, 2) Trail : polyvalent pour tous terrains, 3) All Mountain/Enduro : pour les descentes techniques, 4) Descente (DH) : conçu pour les pistes raides, 5) Freeride : pour les sauts et figures, 6) Dirt/Street : pour le street et le park, 7) Fatbike : pneus larges pour la neige et le sable, 8) E-MTB : assistance électrique, 9) Gravel : entre VTT et route, 10) Trial : pour les figures techniques.",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Comment choisir ses pneus de VTT ?",
+                    "reponse": "Critères de choix : 1) Largeur (2.1\" à 2.8\" selon l'usage), 2) Type de gomme (tendre pour la motricité, dure pour la longévité), 3) Sculptures (crampons pour la boue, profil bas pour le sec), 4) Tringle (souple pour le confort, rigide pour la précision), 5) Pression (adaptée à votre poids et au terrain), 6) Tubeless ou chambre à air, 7) Poids du pneu (léger pour la compétition, plus lourd pour la robustesse). Exemple : 2.4\" à crambons pour l'enduro, 2.1\" à profil bas pour le XC.",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Quelle est la durée de vie moyenne d'un VTT ?",
+                    "reponse": "La durée de vie dépend de l'usage et de l'entretien : 1) Cadre : 5-15 ans, 2) Fourche : 3-8 ans (avec révisions régulières), 3) Transmission : 2000-5000 km, 4) Pneus : 1000-3000 km, 5) Chaine : 1000-3000 km, 6) Pédales : 2-5 ans, 7) Freins : 2-4 ans (plaquettes plus souvent). Un VTT bien entretenu peut durer plus de 10 ans, mais les pièces d'usure devront être remplacées régulièrement.",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Comment choisir entre un VTT à assistance électrique et un VTT classique ?",
+                    "reponse": "Choisissez un VTT électrique si : vous avez des difficultés physiques, vous parcourez de longues distances, vous voulez réduire l'effort en montée, ou vous utilisez le vélo pour des trajets urbains avec dénivelé. Optez pour un VTT classique si : vous cherchez une pratique sportive, vous voulez un vélo plus léger, vous préférez moins d'entretien, ou votre budget est limité. Les VAE sont plus lourds (20-25kg) et nécessitent des révisions spécifiques de la transmission.",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Comment transporter son VTT en voiture ?",
+                    "reponse": "Options de transport : 1) Porte-vélo arrière (le plus économique), 2) Barre de toit avec porte-vélo (accès au coffre maintenu), 3) Attelage avec plateau (plus stable à haute vitesse), 4) À l'intérieur du véhicule (si assez de place). Conseils : Fixez solidement le vélo, protégez les parties sensibles (dérailleur, cadres), vérifiez la réglementation locale, et retirez les accessoires amovibles (lumières, ordinateur). N'oubliez pas de vérifier la hauteur libre avec le vélo sur le toit !",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Comment choisir la bonne taille de roues pour mon VTT ?",
+                    "reponse": "Les tailles courantes sont : 1) 26\" : réactive et maniable, idéale pour le dirt/park, 2) 27.5\" (650B) : bon compromis entre agilité et roulance, 3) 29\" : excellente roulance en terrain dégagé, idéale pour le XC, 4) 27.5+ : pneus larges pour plus d'adhérence. Choisissez en fonction de votre taille (les grands gabarits préféreront du 29\"), de votre style de pilotage (technique = 27.5\", vitesse = 29\") et du type de terrain (accidenté = 27.5\", roulant = 29\").",
+                    "category": "Général VTT"
+                },
+                {
+                    "question": "Comment préparer son VTT pour une longue randonnée ?",
+                    "reponse": "Préparation optimale : 1) Vérifiez l'état des pneus et la pression, 2) Contrôlez les freins et la transmission, 3) Graissez la chaîne, 4) Vérifiez les serrages (pédales, selle, guidon), 5) Prévoyez des chambres à air de rechange et une pompe, 6) Installez des garde-boues si nécessaire, 7) Ajoutez des porte-bagages et sacoches, 8) Vérifiez l'éclairage, 9) Emportez des outils de base (dérailleur, clés), 10) Testez le tout sur une courte distance avant le grand départ.",
+                    "category": "Général VTT"
+                }
+            ]
+        },
+        {
+            "id": "debuter",
+            "name": "Débuter en Freeride/Descente",
+            "questions": [
+                {
+                    "question": "Qu'est-ce que le VTT freeride?",
+                    "reponse": "Le VTT freeride est une discipline du VTT qui met l'accent sur la technique, le style et les figures, souvent sur des terrains naturels ou spécialement aménagés avec des sauts, des drops et d'autres obstacles.",
+                    "category": "Débuter en Freeride/Descente"
+                },
+                {
+                    "question": "Comment débuter en VTT freeride?",
+                    "reponse": "Pour débuter en freeride : 1) Commencez par maîtriser les bases du VTT sur des terrains faciles, 2) Prenez des cours avec un moniteur qualifié, 3) Investissez dans un équipement de protection complet, 4) Progressez graduellement sur des modules de difficulté croissante, 5) Rejoignez un club ou une communauté de riders pour progresser ensemble.",
+                    "category": "Débuter en Freeride/Descente"
+                },
+                {
+                    "question": "Quelle est la différence entre freeride et descente?",
+                    "reponse": "La descente (downhill) est principalement axée sur la vitesse pour descendre une piste le plus rapidement possible, souvent en compétition. Le freeride est plus libre, se concentrant sur la créativité, les figures et l'exploration de terrains variés.",
+                    "category": "Débuter en Freeride/Descente"
+                },
+                {
+                    "question": "Quel équipement est nécessaire pour le VTT freeride?",
+                    "reponse": "L'équipement essentiel comprend : un VTT tout-suspendu robuste, un casque intégral, des protections corporelles (genouillères, coudières, dorsale), des gants, et des chaussures adaptées. Il est également recommandé d'avoir des protège-tibias et des lunettes de protection.",
+                    "category": "Débuter en Freeride/Descente"
+                },
+                {
+                    "question": "À quel âge peut-on commencer le freeride VTT?",
+                    "reponse": "Il n'y a pas d'âge minimum strict, mais généralement vers 10-12 ans avec un VTT adapté à la taille de l'enfant. L'important est de commencer progressivement, avec un équipement de protection complet et sous supervision. De nombreux riders commencent plus tard, même à l'âge adulte, en suivant une progression adaptée à leur niveau.",
+                    "category": "Débuter en Freeride/Descente"
+                },
+                {
+                    "question": "Faut-il être en excellente condition physique pour débuter le freeride?",
+                    "reponse": "Une bonne condition physique est un atout mais n'est pas obligatoire pour débuter. Il est recommandé de travailler son endurance et son renforcement musculaire, notamment au niveau des jambes, du dos et des bras. L'important est d'y aller progressivement et d'écouter son corps. La condition physique s'améliore naturellement avec la pratique régulière.",
+                    "category": "Débuter en Freeride/Descente"
+                }
+            ]
+        },
+        {
+            "id": "techniques",
+            "name": "Techniques de Pilotage",
+            "questions": [
+                {
+                    "question": "Quelles sont les techniques de base à maîtriser en VTT freeride?",
+                    "reponse": "Les techniques de base essentielles en freeride sont : la position équilibrée sur le vélo, la gestion du freinage, le franchissement d'obstacle, le saut et la réception, le virage relevé, et le lâcher de frein. La maîtrise de ces fondamentaux permet ensuite d'aborder sereinement des modules et terrains plus techniques.",
+                    "category": "Techniques de Pilotage"
+                },
+                {
+                    "question": "Comment améliorer ma technique de saut en VTT?",
+                    "reponse": "Pour améliorer votre technique de saut : 1) Travaillez l'impulsion en compressant puis en détendant votre vélo, 2) Maintenez une position équilibrée en l'air, 3) Regardez toujours votre zone de réception, 4) Fléchissez les jambes à la réception pour absorber l'impact, 5) Commencez par des essais courts et contrôlés, 6) Envisagez des sessions d'entraînement avec un coach qualifié.",
+                    "category": "Techniques de Pilotage"
+                },
+                {
+                    "question": "Comment aborder les virages relevés en descente?",
+                    "reponse": "Pour négocier efficacement les virages relevés : 1) Adoptez une position légèrement inclinée vers l'intérieur du virage, 2) Gardez le regard loin devant vers la sortie du virage, 3) Dosez votre freinage avant d'entrer dans le virage, 4) Relâchez progressivement les freins dans le virage, 5) Appuyez sur le pied extérieur tout en inclinant le vélo, 6) Utilisez la compression du terrain pour gagner en vitesse à la sortie.",
+                    "category": "Techniques de Pilotage"
+                },
+                {
+                    "question": "Comment négocier les racines et les rochers en descente?",
+                    "reponse": "Technique pour les racines/rochers : 1) Approchez-vous avec de la vitesse (contrôlée), 2) Levez légèrement la roue avant en tirant sur le guidon, 3) Transférez votre poids vers l'arrière, 4) Laissez le vélo rouler sous vous en gardant les bras et jambes fléchis, 5) Évitez de freiner sur l'obstacle, 6) Regardez au-delà de l'obstacle, pas directement dessus, 7) Laissez le guidon libre pour que la roue avant puisse tourner librement.",
+                    "category": "Techniques de Pilotage"
+                },
+                {
+                    "question": "Comment améliorer son freinage en descente?",
+                    "reponse": "Pour un freinage efficace : 1) Utilisez principalement le frein avant (70% de la puissance) en contrôlant la pression, 2) Gardez les doigts toujours sur les leviers, 3) Freinez avant les virages, pas pendant, 4) Utilisez les deux freins simultanément mais dosés différemment, 5) Évitez les freinages brusques qui bloquent les roues, 6) Passez les vitesses avant les sections techniques, 7) Entretenez régulièrement vos freins (plaquettes, disques, purge du liquide).",
+                    "category": "Techniques de Pilotage"
+                },
+                {
+                    "question": "Comment effectuer un manual correctement?",
+                    "reponse": "Pour réussir un manual : 1) Roulez à vitesse modérée en position de base, 2) Fléchissez légèrement les bras et les jambes, 3) Déplacez votre poids vers l'arrière en poussant sur les pédales, 4) Tirez sur le guidon en gardant les bras tendus, 5) Utilisez le frein arrière pour contrôler l'équilibre, 6) Commencez par des essais courts et contrôlés, 7) Entraînez-vous sur un faux plat descendant au début.",
+                    "category": "Techniques de Pilotage"
+                },
+                {
+                    "question": "Comment gérer les dévers techniques?",
+                    "reponse": "Pour les dévers techniques : 1) Gardez le poids vers l'extérieur du dévers, 2) Maintenez une vitesse constante, 3) Regardez loin devant vers la sortie, 4) Gardez les pédales à l'horizontale, 5) Utilisez légèrement le frein arrière pour contrôler la vitesse, 6) Restez détendu pour permettre au vélo de bouger sous vous, 7) Évitez les freinages brusques qui pourraient faire déraper la roue avant.",
+                    "category": "Techniques de Pilotage"
+                },
+                {
+                    "question": "Comment améliorer sa technique de bunny hop?",
+                    "reponse": "Pour progresser en bunny hop : 1) Commencez par maîtriser le lever de roue avant (manual), 2) Puis travaillez le saut de roue arrière, 3) Enchaînez les deux mouvements de façon fluide, 4) Poussez sur les pédales pour faire décoller le vélo, 5) Ramenez les genoux vers la poitrine, 6) Utilisez vos bras pour guider le vélo, 7) Entraînez-vous d'abord sur du plat avant de passer aux obstacles.",
+                    "category": "Techniques de Pilotage"
+                }
+            ]
+        },
+        {
+            "id": "materiel",
+            "name": "Matériel et Entretien",
+            "questions": [
+                {
+                    "question": "Comment choisir la taille de son VTT pour la pratique du freeride?",
+                    "reponse": "Pour choisir la taille de votre VTT de freeride : 1) Référez-vous aux tableaux des fabricants selon votre taille, 2) Privilégiez plutôt une taille légèrement plus petite pour gagner en maniabilité, 3) Considérez le reach (longueur horizontale du tube supérieur) plus que la hauteur du cadre, 4) Testez si possible différentes tailles avant l'achat, 5) Tenez compte de votre style de pilotage : plus agressif = taille légèrement plus grande, plus technique/freestyle = taille plus compacte.",
+                    "category": "Matériel et Entretien"
+                },
+                {
+                    "question": "Quelle maintenance régulière effectuer sur un VTT de freeride?",
+                    "reponse": "La maintenance régulière d'un VTT de freeride comprend : le nettoyage après chaque sortie, la vérification et le graissage de la chaîne, le contrôle de la pression des pneus, la vérification des serrages, l'inspection des plaquettes de frein, et le contrôle des suspensions. Une révision complète est recommandée tous les 3 mois pour un usage intensif, avec purge des freins et entretien des suspensions.",
+                    "category": "Matériel et Entretien"
+                },
+                {
+                    "question": "Comment entretenir les suspensions d'un VTT de descente?",
+                    "reponse": "Pour entretenir les suspensions : 1) Nettoyez régulièrement les plongeurs de la fourche et l'amortisseur, 2) Vérifiez les joints anti-poussière, 3) Respectez les intervalles de service recommandés par le fabricant (généralement 50h pour un service basique, 100-200h pour un service complet), 4) Ajustez régulièrement les réglages selon votre poids et votre style de pilotage, 5) Faites entretenir les éléments internes par un professionnel au moins une fois par an.",
+                    "category": "Matériel et Entretien"
+                },
+                {
+                    "question": "Comment entretenir sa transmission par temps de boue?",
+                    "reponse": "Entretien par temps boueux : 1) Nettoyez la chaîne après chaque sortie avec un dégraissant, 2) Utilisez un nettoyeur haute pression avec précaution (pas trop près des roulements), 3) Séchez bien la transmission avant de regraisser, 4) Appliquez un lubrifiant adapté aux conditions humides (plus épais), 5) Vérifiez régulièrement l'usure de la cassette et du plateau, 6) Pensez à protéger le boîtier de pédalier et la tige de selle avec de la graisse, 7) Inspectez les gaines de dérailleurs qui peuvent s'encrasser.",
+                    "category": "Matériel et Entretien"
+                },
+                {
+                    "question": "Quels sont les signes d'usure d'un pneu de freeride?",
+                    "reponse": "Signes d'usure à surveiller : 1) Crampons usés ou cassés, 2) Témoins d'usure atteints (petits trous entre les crampons), 3) Carcasse endommagée (coupures, déchirures), 4) Usure irrégulière (signe d'un mauvais gonflage ou d'un défaut de géométrie), 5) Perte d'adhérence anormale, 6) Hernies ou déformations sur le flanc, 7) Trous ou coupures profondes. Un pneu usé perd en adhérence et augmente les risques de crevaison.",
+                    "category": "Matériel et Entretien"
+                },
+                {
+                    "question": "Comment bien choisir son casque pour le freeride?",
+                    "reponse": "Pour le freeride, choisissez un casque intégral certifié DH (Downhill) avec ces caractéristiques : 1) Protection complète de la tête et du menton, 2) Système de ventilation efficace, 3) Visière amovible, 4) Système de réglage précis, 5) Poids léger (autour de 1000g), 6) Compatible avec des protections cervicales si nécessaire. Privilégiez les marques reconnues comme Fox, Bell, Troy Lee Designs, ou POC.",
+                    "category": "Matériel et Entretien"
+                },
+                {
+                    "question": "Quelle est la durée de vie moyenne d'une suspension de VTT?",
+                    "reponse": "La durée de vie d'une suspension dépend de l'utilisation et de l'entretien : 1) Entre 100 et 200 heures de pratique pour un service basique, 2) 500 à 1000 heures pour une révision complète, 3) 3 à 5 ans pour les joints et les pièces d'usure, 4) 5 à 8 ans pour l'ensemble de la suspension. Les signes de fatigue incluent des fuites d'huile, une perte de performance, des bruits anormaux ou des mouvements irréguliers.",
+                    "category": "Matériel et Entretien"
+                },
+                {
+                    "question": "Comment choisir ses pneus pour différentes conditions de terrain?",
+                    "reponse": "Choix des pneus selon le terrain : 1) Sec/compact : pneus à crampons bas et rapprochés, 2) Boue : gros crampons espacés avec profil agressif, 3) Rocher : gomme tendre et flancs renforcés, 4) Mixte : crampons centraux rapprochés et latéraux plus agressifs, 5) Terre battue : crampons larges et bas, 6) Conditions changeantes : pneus à double gomme (plus tendre sur les côtés). Adaptez également la largeur : plus large = plus de stabilité, plus étroit = plus de précision.",
+                    "category": "Matériel et Entretien"
+                },
+                {
+                    "question": "Quels outils emporter pour une sortie freeride?",
+                    "reponse": "Kit d'outils essentiel : 1) Démonte-pneus, 2) Chambre à air de rechange, 3) Multi-outil avec embouts Torx et Allen, 4) Maillon de chaîne rapide, 5) Démonte-chaîne, 6) Pompe portable, 7) Rustines et colle, 8) Clé à rayon, 9) Petite bombe dégrippante, 10) Chiffon. Pour les sorties plus engagées, ajoutez : une chambre à air supplémentaire, des plaquettes de frein de rechange, et un kit de réparation de dériveur de chaîne.",
+                    "category": "Matériel et Entretien"
+                }
+            ]
+        },
+        {
+            "id": "securite",
+            "name": "Sécurité et Préparation",
+            "questions": [
+                {
+                    "question": "Comment prévenir les blessures en pratiquant le freeride?",
+                    "reponse": "Pour prévenir les blessures : 1) Portez TOUJOURS l'équipement de protection adapté (casque intégral, protection dorsale, genouillères, coudières), 2) Progressez par étapes sans brûler les étapes, 3) Inspectez toujours les modules et les réceptions avant de les aborder, 4) Respectez vos limites physiques et techniques, 5) Préparez-vous physiquement (renforcement musculaire, souplesse), 6) Hydratez-vous et alimentez-vous correctement, 7) Ne roulez jamais seul sur des spots techniques.",
+                    "category": "Sécurité et Préparation"
+                },
+                {
+                    "question": "Quelle préparation physique pour le VTT de descente?",
+                    "reponse": "La préparation physique idéale combine : 1) Renforcement musculaire des membres inférieurs (squats, fentes) et supérieurs (pompes, tractions), 2) Travail du gainage et des muscles profonds pour stabiliser le buste, 3) Exercices d'endurance pour supporter les longues descentes, 4) Entraînement fractionné pour améliorer la résistance aux efforts intenses, 5) Étirements pour maintenir la souplesse des chaînes musculaires sollicitées, 6) Exercices proprioceptifs pour améliorer l'équilibre et la coordination.",
+                    "category": "Sécurité et Préparation"
+                },
+                {
+                    "question": "Quels accessoires indispensables pour une sortie freeride?",
+                    "reponse": "Les accessoires essentiels : 1) Pompe à haute pression et démonte-pneus, 2) Chambre à air de rechange et rustines, 3) Multi-outil avec clés Allen et Torx, 4) Maillon de chaîne rapide et dérive-chaîne, 5) Kit de premiers secours, 6) Téléphone portable chargé, 7) Barres énergétiques et eau, 8) Veste coupe-vent légère, 9) Paire de gants de rechange, 10) Petite serviette pour essuyer la boue.",
+                    "category": "Sécurité et Préparation"
+                },
+                {
+                    "question": "Quels pneus choisir pour la pratique du freeride et de la descente?",
+                    "reponse": "Pour le freeride et la descente, privilégiez des pneus larges (2.3 à 2.5 pouces) avec des crampons agressifs. En descente pure, optez pour des gommes tendres (soft ou super soft) offrant une adhérence maximale. Pour le freeride, une gomme intermédiaire (medium) offre un bon compromis adhérence/durabilité. La carcasse renforcée (Double Down, SuperGravity ou DH) est essentielle pour éviter les crevaisons. Adaptez votre choix au terrain : sec, boueux, ou rocheux.",
+                    "category": "Sécurité et Préparation"
+                },
+                {
+                    "question": "Comment gérer la peur en descente?",
+                    "reponse": "Pour gérer l'appréhension : 1) Analysez la difficulté objectivement, 2) Fractionnez les passages techniques en sections plus courtes, 3) Respirez profondément avant chaque section, 4) Visualisez votre trajectoire, 5) Commencez par suivre un rider plus expérimenté, 6) Acceptez de poser pied si nécessaire, 7) Progressez par paliers, 8) Travaillez votre technique sur des terrains plus faciles, 9) Écoutez votre instinct, 10) Rappelez-vous que la peur est naturelle et utile quand elle est maîtrisée.",
+                    "category": "Sécurité et Préparation"
+                },
+                {
+                    "question": "Comment se préparer pour une sortie en montagne?",
+                    "reponse": "Préparation d'une sortie montagne : 1) Vérifiez la météo, 2) Étudiez l'itinéraire (dénivelé, difficulté, points de ravitaillement), 3) Prévoyez des vêtements adaptés aux changements de température, 4) Emportez suffisamment d'eau et de nourriture, 5) Informez quelqu'un de votre itinéraire et de l'heure prévue de retour, 6) Vérifiez l'état de votre matériel, 7) Emportez une carte et/ou un GPS, 8) Prévoyez une solution en cas de panne mécanique, 9) Adaptez votre parcours à votre condition physique, 10) Emportez une couverture de survie et une trousse de premiers secours.",
+                    "category": "Sécurité et Préparation"
+                },
+                {
+                    "question": "Comment éviter les douleurs aux mains et aux avant-bras?",
+                    "reponse": "Pour prévenir les douleurs : 1) Vérifiez la position de vos leviers de frein, 2) Évitez de trop serrer le guidon, 3) Travaillez votre position de conduite (coude fléchi, épaules relâchées), 4) Renforcez votre prise avec des exercices spécifiques, 5) Étirez-vous avant et après la sortie, 6) Faites des pauses régulières, 7) Utilisez des poignées ergonomiques, 8) Vérifiez la pression de vos pneus (trop basse = plus de vibrations), 9) Pensez à relâcher la pression des doigts dans les sections faciles, 10) Massez vos avant-bras après la sortie.",
+                    "category": "Sécurité et Préparation"
+                }
+            ]
+        },
+        {
+            "id": "competition",
+            "name": "Compétition et Progression",
+            "questions": [
+                {
+                    "question": "Comment progresser du niveau débutant à intermédiaire en freeride?",
+                    "reponse": "Pour progresser du niveau débutant à intermédiaire : 1) Maîtrisez d'abord totalement votre vélo sur terrain plat, 2) Abordez progressivement des modules de difficulté croissante, 3) Entraînez-vous régulièrement sur des skills parks (parcs de techniques), 4) Filmez-vous pour analyser vos erreurs, 5) Participez à des stages encadrés, 6) Roulez avec des riders plus expérimentés, 7) Travaillez spécifiquement vos points faibles lors de sessions dédiées.",
+                    "category": "Compétition et Progression"
+                },
+                {
+                    "question": "Comment préparer sa première compétition de descente?",
+                    "reponse": "Préparation pour une première compétition : 1) Inscrivez-vous dans la catégorie débutante, 2) Familiarisez-vous avec le règlement, 3) Étudiez le parcours à pied avant de le rouler, 4) Faites plusieurs reconnaissances à allure modérée, 5) Prévoyez un échauffement complet, 6) Apportez des pièces de rechange et de l'outillage, 7) Gérez votre effort sur les qualifications, 8) Restez concentré mais détendu, 9) N'oubliez pas que le plus important est de prendre du plaisir et de finir la course.",
+                    "category": "Compétition et Progression"
+                },
+                {
+                    "question": "Quels exercices pratiquer pour améliorer son équilibre en VTT?",
+                    "reponse": "Pour améliorer votre équilibre : 1) Pratiquez le surplace (track stand), 2) Exercez-vous à rouler sur des obstacles étroits comme des planches ou des rondins, 3) Entraînez-vous au wheeling (rouler sur la roue arrière) et au manual (sans pédaler), 4) Travaillez les sauts d'obstacles à basse vitesse, 5) Pratiquez les virages serrés à faible allure, 6) Utilisez des exercices de proprioception hors vélo comme la planche ou le travail sur ballon d'équilibre.",
+                    "category": "Compétition et Progression"
+                },
+                {
+                    "question": "Quels sont les réglages essentiels sur un VTT de freeride?",
+                    "reponse": "Les réglages essentiels sont : 1) Le SAG (enfoncement initial des suspensions, généralement 25-30% pour le freeride), 2) La détente et la compression des suspensions avant et arrière, 3) La pression des pneus selon le terrain, 4) La position des commandes au guidon pour un accès optimal, 5) La hauteur de selle adaptée au type de pratique.",
+                    "category": "Compétition et Progression"
+                },
+                {
+                    "question": "Comment se préparer mentalement pour une compétition?",
+                    "reponse": "Préparation mentale : 1) Établissez des objectifs réalistes, 2) Visualisez votre course la veille, 3) Développez une routine pré-course, 4) Apprenez des techniques de respiration pour gérer le stress, 5) Concentrez-vous sur votre propre course, non sur les autres, 6) Acceptez l'échec comme partie intégrante de la progression, 7) Travaillez votre dialogue intérieur, 8) Apprenez à gérer les imprévus, 9) Focalisez-vous sur le processus plutôt que sur le résultat, 10) Profitez de l'expérience quelle que soit l'issue.",
+                    "category": "Compétition et Progression"
+                },
+                {
+                    "question": "Comment analyser sa progression en VTT?",
+                    "reponse": "Pour analyser votre progression : 1) Tenez un carnet d'entraînement, 2) Filmez-vous régulièrement, 3) Notez vos temps sur des parcours de référence, 4) Identifiez vos points faibles, 5) Célébrez les petites victoires, 6) Demandez des retours à des riders plus expérimentés, 7) Participez à des événements pour vous évaluer, 8) Variez les terrains et les difficultés, 9) Fixez-vous des objectifs à court, moyen et long terme, 10) Analysez vos sensations après chaque sortie.",
+                    "category": "Compétition et Progression"
+                },
+                {
+                    "question": "Comment améliorer son endurance en descente?",
+                    "reponse": "Pour améliorer l'endurance en descente : 1) Travaillez votre condition physique générale, 2) Renforcez spécifiquement les muscles sollicités (bras, épaules, dos), 3) Augmentez progressivement la durée de vos sorties, 4) Apprenez à économiser votre énergie (position, freinage), 5) Améliorez votre technique pour être plus efficace, 6) Faites des exercices de gainage, 7) Hydratez-vous et alimentez-vous correctement, 8) Travaillez votre respiration, 9) Alternez les phases d'effort et de récupération, 10) Prévoyez des séances de récupération active.",
+                    "category": "Compétition et Progression"
+                },
+                {
+                    "question": "Comment se remettre d'une blessure en VTT?",
+                    "reponse": "Conseils de récupération : 1) Respectez le temps de guérison prescrit, 2) Suivez scrupuleusement la rééducation, 3) Maintenez une activité physique adaptée, 4) Travaillez les muscles antagonistes, 5) Reprenez progressivement, 6) Retravaillez votre technique, 7) Renforcez la zone blessée, 8) Travaillez votre mental, 9) Analysez la cause de la blessure, 10) Soyez patient et à l'écoute de votre corps.",
+                    "category": "Compétition et Progression"
+                }
+            ]
+        },
+        {
+            "id": "figures",
+            "name": "Figures Techniques",
+            "questions": [
+                {
+                    "question": "Quelles sont les figures de base à maîtriser en VTT freeride?",
+                    "reponse": "Les 5 figures fondamentales à maîtriser sont : 1) Le Bunny Hop (saut de base), 2) Le Manual (rouler sur la roue arrière), 3) Le Wheelie (rouler sur la roue arrière en pédalant), 4) Le Drop (saut avec réception en contrebas), 5) Le Tabletop (saut avec inclinaison latérale). Ces bases ouvrent la voie à des figures plus avancées et améliorent considérablement le contrôle du vélo.",
+                    "category": "Figures Techniques"
+                },
+                {
+                    "question": "Quelle est la meilleure façon d'apprendre les figures de base?",
+                    "reponse": "Méthode d'apprentissage efficace : 1) Commencez par des figures au sol (wheelie, manual), 2) Passez aux petits sauts, 3) Utilisez des modules adaptés aux débutants, 4) Prenez des cours avec un moniteur, 5) Entraînez-vous régulièrement, 6) Analysez vos progrès, 7) Ne négligez pas la théorie, 8) Travaillez votre condition physique, 9) Apprenez à bien tomber, 10) Soyez patient et persévérant. Conseil : Ne sautez pas les étapes et assurez-vous de maîtriser chaque figure avant de passer à la suivante.",
+                    "category": "Figures Techniques"
+                },
+                {
+                    "question": "Quelle est la physique derrière la rotation en backflip?",
+                    "reponse": "La physique du backflip implique plusieurs principes clés : 1) Moment angulaire généré par l'impulsion des jambes, 2) Centre de gravité légèrement en arrière de l'axe de la roue arrière, 3) Vitesse de rotation contrôlée par la position du corps, 4) Paramètres du tremplin (30-45° idéal), 5) Vitesse d'approche (15-25 km/h). Plus vous êtes groupé, plus la rotation est rapide.",
+                    "category": "Figures Techniques"
+                }
+            ]
+        },
+        {
+            "id": "entrainement",
+            "name": "Entraînement et Performance",
+            "questions": [
+                {
+                    "question": "Comment structurer sa semaine d'entraînement VTT ?",
+                    "reponse": "Structure type pour un VTTiste :\n- Lundi : Repos ou récupération active (30-45min de vélo très léger)\n- Mardi : Séance seuil (2x20min à 85-90% FCM)\n- Mercredi : VTT technique (habileté, franchissements, single tracks)\n- Jeudi : Fractionné court (30/30 ou 40/20 pour la PMA)\n- Vendredi : Repos\n- Samedi : Sortie longue endurance (2-4h)\n- Dimanche : Sortie avec intensité (côtes, sprints)\nÀ adapter selon son niveau et ses objectifs.",
+                    "category": "Entraînement et Performance"
+                },
+                {
+                    "question": "Comment progresser en montée en VTT ?",
+                    "reponse": "Pour améliorer vos montées : 1) Travaillez la vélocité (80-90 rpm), 2) Renforcez votre gainage, 3) Montez en danseuse par intervalles, 4) Travaillez la puissance avec des séances de côtes courtes, 5) Améliorez votre technique (choix de trajectoire, gestion du braquet), 6) Allégez votre vélo si possible, 7) Travaillez votre respiration, 8) Ne négligez pas la récupération entre les efforts.",
+                    "category": "Entraînement et Performance"
+                },
+                {
+                    "question": "Comment préparer une course d'enduro ?",
+                    "reponse": "Préparation complète :\n1) Physique : Travaillez l'explosivité et l'endurance de force\n2) Technique : Maîtrise des virages dérapés et sauts\n3) Matériel : Vérifiez freins, suspension et pneus\n4) Stratégie : Reconnaissance des spéciales, gestion de l'effort\n5) Nutrition : Testez votre ravitaillement à l'entraînement\n6) Réglages : Suspensions adaptées au terrain\n7) Mental : Visualisation des spéciales\n8) Récupération : Sommeil et étirements",
+                    "category": "Entraînement et Performance"
+                }
+            ]
+        },
+        {
+            "id": "mecanique",
+            "name": "Mécanique et Réglages",
+            "questions": [
+                {
+                    "question": "Comment bien régler sa suspension avant ?",
+                    "reponse": "Réglage de base :\n1) SAG : 15-20% de la course pour l'avant (mesurez avec un collier de fourche)\n2) Compression : Commencez au milieu et ajustez selon le terrain\n3) Détente : Réglez pour que la suspension revienne sans à-coups\n4) Pression : Utilisez la pompe à suspension et suivez les préconisations du constructeur\n5) Testez sur un parcours connu et affinez\nNote : Les réglages dépendent de votre poids, style de pilotage et du terrain.",
+                    "category": "Mécanique et Réglages"
+                },
+                {
+                    "question": "Quand faut-il changer sa chaîne de VTT ?",
+                    "reponse": "Changez votre chaîne quand l'usure atteint 0.5% (vérifiez avec un pied à coulisse ou un outil de mesure d'usure). Une chaîne usée use prématurément la cassette et les plateaux. En utilisation intensive, prévoyez 3-5 chaînes par cassette. Astuce : Alternez entre deux chaînes neuves pour une usure plus régulière.",
+                    "category": "Mécanique et Réglages"
+                }
+            ]
+        },
+        {
+            "id": "equipement",
+            "name": "Équipement et Matériel",
+            "questions": [
+                {
+                    "question": "Comment choisir ses chaussures de VTT ?",
+                    "reponse": "Critères de choix :\n1) Rigidité de la semelle (plus rigide = meilleur transfert de puissance)\n2) Type de cale (SPD pour le trail/enduro, plateforme pour le freeride)\n3) Matière (synthétique respirante ou cuir plus résistant)\n4) Semelle extérieure (caoutchouc adhérent pour les portages)\n5) Système de laçage (boucle rapide ou traditionnel)\n6) Taille : Essayez en fin de journée avec des chaussettes épaisses\n7) Compatibilité avec vos pédales",
+                    "category": "Équipement et Matériel"
+                },
+                {
+                    "question": "Quel sac à dos choisir pour une rando VTT ?",
+                    "reponse": "Pour une rando VTT, privilégiez :\n- Volume : 10-15L pour la journée, 20-30L pour plusieurs jours\n- Système de portage : Bretelles aérées et ceinture ventrale\n- Poche à eau : 2-3L avec sortie de tuyau pratique\n- Organisation : Poches multiples pour outils, nourriture, veste\n- Fixation : Élastiques ou sangles pour le casque\n- Poids : Moins de 1kg à vide\n- Sécurité : Bandes réfléchissantes\nMarques recommandées : Osprey, CamelBak, Evoc, Dakine",
+                    "category": "Équipement et Matériel"
+                }
+            ]
+        },
+        {
+            "id": "voyage",
+            "name": "Voyages et Randonnées",
+            "questions": [
+                {
+                    "question": "Quels sont les meilleurs spots de VTT en Europe ?",
+                    "reponse": "Top 5 des spots en Europe :\n1) Alpes françaises (Les Gets, Morzine, Alpe d'Huez)\n2) Dolomites, Italie (chemins spectaculaires)\n3) Finale Ligure, Italie (spot de référence)\n4) Sierra Nevada, Espagne (300 jours de soleil/an)\n5) Tweed Valley, Écosse (sentiers techniques)\nConseil : Vérifiez les saisons et conditions météo avant de partir.",
+                    "category": "Voyages et Randonnées"
+                },
+                {
+                    "question": "Comment préparer un bikepacking de plusieurs jours ?",
+                    "reponse": "Checklist pour le bikepacking :\n1) Itinéraire : 60-80km/jour max, points d'eau, hébergements\n2) Matériel : Tente légère, duvet, matelas, réchaud\n3) Réparation : Chambre à air, rustines, dérive-chaîne, outils\n4) Navigation : GPS, cartes papier, batterie externe\n5) Nourriture : 3000-4000kcal/jour, léger et énergétique\n6) Sécurité : Trousse de secours, couverture de survie\n7) Testez tout votre matériel avant le départ !",
+                    "category": "Voyages et Randonnées"
+                }
+            ]
+        },
+        {
+            "id": "sante",
+            "name": "Santé et Blessures",
+            "questions": [
+                {
+                    "question": "Comment prévenir le mal de dos à VTT ?",
+                    "reponse": "Prévention du mal de dos :\n1) Réglage du vélo : Hauteur de selle, longueur de potence\n2) Renforcement musculaire : Gainage, muscles lombaires\n3) Étirements quotidiens : Dos, ischios, psoas\n4) Technique : Position du dos légèrement cambrée\n5) Équipement : Suspension adaptée, tige de selle suspendue\n6) Progressivité : Augmentez le volume d'entraînement progressivement\n7) Hydratation : Pour les disques intervertébraux",
+                    "category": "Santé et Blessures"
+                },
+                {
+                    "question": "Que faire en cas d'entorse du genou à vélo ?",
+                    "reponse": "Protocole GREC immédiat :\n1) Glace : 15-20min toutes les 2h (pas de contact direct avec la peau)\n2) Repos : Mettez le genou au repos\n3) Élévation : Surélevez la jambe\n4) Compression : Bandage élastique (pas trop serré)\nConsultez un médecin si : Gonflement important, impossibilité de marcher, douleur intense. Reprise progressive du vélo sur home-trainer d'abord, puis route plate avant le VTT.",
+                    "category": "Santé et Blessures"
+                },
+                {
+                    "question": "Comment prévenir les blessures aux poignets en VTT ?",
+                    "reponse": "Pour protéger vos poignets : 1) Positionnez correctement vos poignées et leviers de frein (légèrement inclinés vers le bas), 2) Gardez les coudes légèrement fléchis pour absorber les chocs, 3) Renforcez vos avant-bras avec des exercices spécifiques, 4) Étirez vos poignets avant et après chaque sortie, 5) Utilisez des gants avec rembourrage, 6) Alternez la position de vos mains sur le guidon, 7) Vérifiez la pression de vos pneus (trop basse = plus de vibrations).",
+                    "category": "Santé et Blessures"
+                },
+                {
+                    "question": "Comment soigner les éraflures et plaies après une chute ?",
+                    "reponse": "Traitement des plaies : 1) Lavez abondamment à l'eau claire, 2) Désinfectez avec un antiseptique, 3) Appliquez une crème cicatrisante, 4) Protégez avec un pansement adapté, 5) Changez le pansement tous les jours, 6) Surveillez les signes d'infection (rougeur, chaleur, douleur). Pour les brûlures de cuisse (frottement), utilisez une crème réparatrice et évitez le frottement jusqu'à guérison.",
+                    "category": "Santé et Blessures"
+                },
+                {
+                    "question": "Comment prévenir les douleurs cervicales en VTT ?",
+                    "reponse": "Prévention des douleurs cervicales : 1) Ajustez la hauteur et l'angle de la potence, 2) Renforcez les muscles du cou et des épaules, 3) Faites des pauses régulières pour détendre la nuque, 4) Travaillez votre souplesse cervicale, 5) Évitez de trop lever la tête, 6) Vérifiez la position de votre casque, 7) Massez-vous les trapèzes après la sortie. Si les douleurs persistent, consultez un kinésithérapeute spécialisé.",
+                    "category": "Santé et Blessures"
+                },
+                {
+                    "question": "Que faire en cas de fracture de la clavicule à VTT ?",
+                    "reponse": "En cas de fracture de la clavicule : 1) Immobilisez le bras du côté blessé, 2) Mettez-le en écharpe, 3) Appliquez de la glace pour réduire le gonflement, 4) Consultez rapidement un médecin, 5) Suivez la rééducation à la lettre, 6) Reprise progressive du vélo après validation médicale (6-8 semaines généralement). Prévention : Portez des protections dorsales avec coques de protection des épaules si vous pratiquez le freeride ou la descente.",
+                    "category": "Santé et Blessures"
+                },
+                {
+                    "question": "Comment éviter les ampoules aux mains en VTT ?",
+                    "reponse": "Prévention des ampoules : 1) Choisissez des gants de qualité avec rembourrage, 2) Appliquez de la crème anti-frottement, 3) Serrez le guidon sans excès, 4) Changez régulièrement la position de vos mains, 5) Utilisez du talc si vous avez les mains moites, 6) Travaillez votre technique pour moins serrer le guidon. Si une ampoule apparaît, percez-la avec une aiguille stérile, désinfectez et protégez avec un pansement adapté.",
+                    "category": "Santé et Blessures"
+                },
+                {
+                    "question": "Quels exercices pour prévenir les blessures en VTT ?",
+                    "reponse": "Exercices clés : 1) Gainage pour le dos et le tronc, 2) Squats et fentes pour les jambes, 3) Pompes et tractions pour le haut du corps, 4) Exercices d'équilibre sur planche instable, 5) Étirements des fléchisseurs de hanche, 6) Renforcement des rotateurs de l'épaule, 7) Travail de mobilité du rachis. Programmez 2-3 séances de renforcement par semaine en complément du vélo.",
+                    "category": "Santé et Blessures"
+                },
+                {
+                    "question": "Comment gérer une commotion cérébrale après une chute ?",
+                    "reponse": "En cas de commotion suspectée : 1) Arrêtez immédiatement l'activité, 2) Consultez un médecin en urgence, 3) Reposez-vous (pas d'écrans, pas de lecture), 4) Ne prenez pas d'anti-inflammatoires, 5) Évitez l'alcool, 6) Reprise progressive des activités, 7) Ne retournez pas sur le vélo sans avis médical. Prévention : Portez toujours un casque certifié et remplacez-le après un choc important.",
+                    "category": "Santé et Blessures"
+                },
+                {
+                    "question": "Comment traiter une tendinite du genou liée au VTT ?",
+                    "reponse": "Traitement de la tendinite : 1) Repos relatif (piscine, vélo route en petite braquet), 2) Glace 3-4 fois par jour, 3) Étirements doux des ischio-jambiers et quadriceps, 4) Renforcement excentrique, 5) Vérifiez votre position sur le vélo (hauteur de selle, recul de selle, cales), 6) Utilisez une genouillère si nécessaire, 7) Consultez un kinésithérapeute. Prévention : Échauffement progressif et étirements après l'effort.",
+                    "category": "Santé et Blessures"
+                }
+            ]
+        },
+        {
+            "id": "vetements-protection",
+            "name": "Vêtements et Protection",
+            "questions": [
+                {
+                    "question": "Quel équipement de protection est essentiel pour le VTT de descente ?",
+                    "reponse": "Équipement essentiel en DH : 1) Casque intégral certifié DH avec mentonnière, 2) Protections genoux et coudières renforcées, 3) Dorsale avec protection complète de la colonne, 4) Gants longs avec protection paume, 5) Protège-tibia, 6) Maillot et short ou combinaison avec renforts, 7) Lunettes de protection, 8) Protège-cou (optionnel mais recommandé). Choisissez des équipements certifiés CE pour une protection optimale.",
+                    "category": "Vêtements et Protection"
+                },
+                {
+                    "question": "Comment s'habiller pour une sortie VTT en hiver ?",
+                    "reponse": "Tenue hivernale en 3 couches : 1) Sous-vêtements techniques respirants (pas de coton), 2) Couche isolante (polaires techniques), 3) Veste coupe-vent et imperméable. Ajoutez : gants hiver, cagoule ou bandeau, chaussettes chaudes, surchaussures, et éventuellement un cache-cou. Privilégiez les matières respirantes pour éviter la transpiration excessive. Pensez aux vêtements avec bandes réfléchissantes pour la visibilité.",
+                    "category": "Vêtements et Protection"
+                },
+                {
+                    "question": "Quelle protection pour le freeride et le dirt ?",
+                    "reponse": "Pour le freeride/dirt : 1) Casque intégral léger avec bonne aération, 2) Genouillères complètes avec coque, 3) Coudières souples ou rigides selon le niveau, 4) Gants épais avec protection paume, 5) Protections dorsales légères, 6) Shorts avec protection hanches/fesses, 7) Maillot à manches longues pour les chutes. Les protections doivent être à la fois résistantes et permettre une bonne mobilité pour les figures.",
+                    "category": "Vêtements et Protection"
+                },
+                {
+                    "question": "Quels vêtements privilégier pour l'enduro ?",
+                    "reponse": "Tenue enduro : 1) Maillot technique respirant, 2) Short ou pantalon léger avec doublure amovible, 3) Chaussettes hautes, 4) Gants mi-saison, 5) Casque enduro (léger avec bonne aération), 6) Genouillères souples, 7) Protection dorsale légère, 8) Veste coupe-vent pliable. L'idée est d'avoir une tenue polyvalente pour les montées techniques et les descentes engagées. Privilégiez des matières respirantes et séchant rapidement.",
+                    "category": "Vêtements et Protection"
+                },
+                {
+                    "question": "Comment adapter sa tenue pour la pluie ?",
+                    "reponse": "Équipement pour la pluie : 1) Veste imperméable respirante (Gore-Tex ou équivalent), 2) Sur-pantalon imperméable, 3) Chaussures étanches ou surchaussures, 4) Gants étanches, 5) Casque avec visière ou casquette sous le casque, 6) Lunettes avec écran anti-buée, 7) Vêtements de rechange secs dans un sac étanche. Astuce : utilisez des sous-vêtements thermiques pour rester au sec même en cas de transpiration.",
+                    "category": "Vêtements et Protection"
+                },
+                {
+                    "question": "Quel équipement pour les sorties estivales ?",
+                    "reponse": "Tenue estivale : 1) Maillot à manches courtes respirant, 2) Cuissard léger avec bonnes coutures, 3) Chaussettes techniques aérées, 4) Gants courts, 5) Casque aéré avec moustiquaire anti-insectes, 6) Lunettes de soleil avec écran UV, 7) Crème solaire haute protection, 8) Casquette sous le casque. Privilégiez les couleurs claires qui absorbent moins la chaleur. Pensez à une poche à eau pour rester hydraté.",
+                    "category": "Vêtements et Protection"
+                },
+                {
+                    "question": "Quelles sont les normes de sécurité pour les casques VTT ?",
+                    "reponse": "Normes essentielles : 1) CE EN 1078 pour les casques classiques, 2) ASTM F1952 pour le DH, 3) MIPS pour la protection contre les chocs rotatifs. Vérifiez la date de fabrication (remplacement conseillé tous les 5 ans). Un bon casque doit être bien ajusté, couvrir le front et l'arrière du crâne, et ne pas bouger une fois attaché. Pour le DH, privilégiez les modèles avec mentonnière intégrée et bonne ventilation.",
+                    "category": "Vêtements et Protection"
+                },
+                {
+                    "question": "Comment choisir ses chaussures de VTT ?",
+                    "reponse": "Critères de choix : 1) Type de pédales (plate ou automatique), 2) Rigidité de la semelle (plus rigide = meilleur transfert de puissance), 3) Respirabilité, 4) Protection de la cheville, 5) Type de fermeture (lacets, scratch, boucle), 6) Matière (synthétique ou cuir), 7) Semelle extérieure adhérente. Pour l'enduro/DH, privilégiez des chaussures montantes avec semelle rigide. Pour le XC, des modèles plus légers et aérés.",
+                    "category": "Vêtements et Protection"
+                },
+                {
+                    "question": "Quels accessoires de sécurité sont indispensables ?",
+                    "reponse": "Accessoires de sécurité essentiels : 1) Sonnette ou avertisseur, 2) Éclairage avant/arrière, 3) Gilet réfléchissant, 4) Sifflet de secours, 5) Bracelet d'identification médicale, 6) Téléphone portable chargé, 7) Sifflet de localisation, 8) Kit de premiers secours, 9) Couverture de survie, 10) Sifflet intégré au casque. Ces accessoires sont particulièrement importants pour les sorties en solitaire ou en milieu isolé.",
+                    "category": "Vêtements et Protection"
+                },
+                {
+                    "question": "Comment entretenir ses vêtements et protections VTT ?",
+                    "reponse": "Entretien optimal : 1) Lavez les vêtements techniques à froid (30° max), 2) Évitez l'adoucissant qui bouche les pores des tissus techniques, 3) Faites sécher à l'air libre, 4) Nettoyez régulièrement les casques avec un chiffon humide, 5) Vérifiez l'état des coques de protection, 6) Remplacez les éléments de protection après un choc important, 7) Imprégnez régulièrement les vêtements imperméables, 8) Stockez à l'abri de l'humidité et de la lumière directe du soleil.",
+                    "category": "Vêtements et Protection"
+                }
+            ]
+        }
+    ]
+}

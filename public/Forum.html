@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forum Red Bull Rampage 2024 - Discutez de la compétition de VTT Freeride">
+    <title>Forum - Red Bull Rampage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/awards-styles.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/header-styles.css">
+    <!-- Scripts principaux -->
+    <script src="js/logo-scroll.js" defer></script>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forum VTT - Partagez vos questions, astuces et expériences">
+    <title>Forum VTT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/awards-styles.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/header-styles.css">
+    <style>
+    .forum-header { display: flex; align-items: center; justify-content: space-between; margin: 32px 0 16px 0; }
+    .forum-title { font-size: 2rem; font-weight: bold; }
+    .forum-new-topic { background: #e10600; color: #fff; border: none; border-radius: 6px; padding: 10px 18px; font-size: 1rem; cursor: pointer; transition: background 0.2s; }
+    .forum-new-topic:hover { background: #b30000; }
+    .forum-layout { display: flex; gap: 32px; }
+    .forum-sidebar { width: 260px; background: #fafafa; border-radius: 10px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .forum-main { flex: 1; display: flex; flex-direction: column; }
+    .forum-topics { width: 100%; border-collapse: collapse; margin-bottom: 32px; }
+    .forum-topics th, .forum-topics td { padding: 12px 10px; border-bottom: 1px solid #eee; }
+    .forum-topics th { background: #f5f5f5; text-align: left; font-weight: 600; }
+    .forum-topics tr:hover { background: #f9f9f9; }
+    .forum-topic-title { font-weight: 500; color: #e10600; text-decoration: none; }
+    .forum-topic-title:hover { text-decoration: underline; }
+    .forum-chatbox {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 420px;
+        max-width: 700px;
+        margin: 0 auto 32px auto;
+        border: 1.5px solid #eaeaea;
+    }
+    .forum-messages {
+        flex: 1;
+        overflow-y: auto;
+        padding: 24px 24px 0 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .forum-message {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .forum-message-avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #e10600;
+        font-size: 1.1em;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .forum-message-content {
+        background: #f7f7fa;
+        border-radius: 10px;
+        padding: 12px 18px;
+        min-width: 80px;
+        max-width: 420px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        font-size: 1em;
+        color: #222;
+    }
+    .forum-message-meta {
+        font-size: 0.85em;
+        color: #888;
+        margin-top: 2px;
+    }
+    .forum-message.me .forum-message-content {
+        background: #e10600;
+        color: #fff;
+        align-self: flex-end;
+    }
+    .forum-message.me {
+        flex-direction: row-reverse;
+    }
+    .forum-inputbox {
+        display: flex;
+        align-items: center;
+        border-top: 1.5px solid #eaeaea;
+        padding: 18px 24px;
+        background: #fafbfc;
+        gap: 12px;
+    }
+    .forum-inputbox input {
+        flex: 1;
+        padding: 12px 16px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-size: 1em;
+        outline: none;
+        transition: border 0.2s;
+    }
+    .forum-inputbox input:focus {
+        border: 1.5px solid #e10600;
+    }
+    .forum-inputbox button {
+        background: #e10600;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 22px;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    .forum-inputbox button:hover {
+        background: #b30000;
+    }
+    @media (max-width: 900px) {
+        .forum-layout { flex-direction: column; }
+        .forum-sidebar { width: 100%; margin-bottom: 24px; }
+        .forum-chatbox { max-width: 100%; }
+    }
+    </style>
+    <script src="js/scroll-header.js" defer></script>
+</head>
+<body class="page-forum">
+    <header>
+        <div class="conteneur-entete">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/red-bull-rampage-2021-logo.avif" alt="Red Bull Rampage Logo" width="180">
+                </a>
+            </div>
+            <nav class="navigation-principale" role="navigation" aria-label="Menu principal">
+                <ul class="liste-navigation">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="Podiums.html">Podiums</a></li>
+                    <li><a href="Classement_Masculin.html">Classement Masculin</a></li>
+                    <li><a href="Classement_Feminin.html">Classement Féminin</a></li>
+                    <li><a href="Forum.html" class="actif">Forum</a></li>
+                    <li id="element-connexion"><a href="Connexion.html">Connexion</a></li>
+                    <li id="element-utilisateur" style="display: none;">
+                        <a href="#" id="email-utilisateur"></a>
+                        <a href="#" id="bouton-deconnexion">Déconnexion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="max-width: 1200px; margin: 0 auto; padding: 0 16px;">
+        <div class="forum-header">
+            <span class="forum-title">Forum VTT - Partage & entraide</span>
+            <button class="forum-new-topic" id="btn-nouveau-sujet"><i class="fas fa-plus"></i> Nouveau sujet</button>
+        </div>
+        <div class="forum-layout">
+            <aside class="forum-sidebar">
+                <h3>Catégories</h3>
+                <ul id="forum-categories" style="list-style:none; padding:0; margin:0;">
+                    <li><button type="button" class="forum-category-btn" data-category="Général" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Général</button></li>
+                    <li><button type="button" class="forum-category-btn" data-category="Matériel" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Matériel</button></li>
+                    <li><button type="button" class="forum-category-btn" data-category="Nutrition" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Nutrition</button></li>
+                    <li><button type="button" class="forum-category-btn" data-category="Compétition" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Compétition</button></li>
+                </ul>
+                <hr>
+                <h4>Recherche</h4>
+                <input type="text" placeholder="Rechercher..." style="width:100%;padding:6px 8px;border-radius:5px;border:1px solid #ddd;">
+            </aside>
+            <section class="forum-main">
+    <!-- Table des sujets -->
+    <table class="forum-topics">
+        <thead>
+            <tr>
+                <th>Sujet</th>
+                <th>Auteur</th>
+                <th>Réponses</th>
+                <th>Dernier message</th>
+            </tr>
+        </thead>
+        <tbody id="forum-topics-list">
+            <!-- Sujets injectés par JS -->
+        </tbody>
+    </table>
+    <div id="forum-empty" style="color:#888; margin-bottom:24px;">Aucun sujet pour cette catégorie.</div>
+
+    <!-- Nouvelle zone de discussion moderne -->
+    <div class="forum-chatbox">
+        <div class="forum-messages" id="messages"></div>
+        <form class="forum-inputbox" id="formulaire-message" autocomplete="off">
+            <input id="saisie-message" type="text" placeholder="Écrivez un message..." autocomplete="off" required>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <button id="btn-historique-categorie" style="display:none;margin-top:10px;">Retour à la liste</button>
+    <div id="forum-error" style="color:#b30000;margin-top:10px;"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="pied-de-page">
+        <!-- ...footer... -->
+    </footer>
+
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/forum-accessibility.css">
+    <script src="js/chatbot.js" defer></script>
+    <script src="js/forum.js" defer></script>
+    <script>
+    // Forum connecté à l'API Express
+    document.addEventListener('DOMContentLoaded', function() {
+        let topics = [];
+        let currentCategory = 'Général';
+        let currentTopicIdx = null;
+        const tbody = document.getElementById('forum-topics-list');
+        const empty = document.getElementById('forum-empty');
+        const categoryBtns = document.querySelectorAll('.forum-category-btn');
+        const forumTitle = document.querySelector('.forum-title');
+        const messagesDiv = document.getElementById('messages');
+        const messageForm = document.getElementById('formulaire-message');
+        const messageInput = document.getElementById('saisie-message');
+        const btnHistorique = document.getElementById('btn-historique-categorie');
+        let generalTopicId = null;
+
+        // Affiche les messages d'un topic (ou de la catégorie Général comme chat ouvert)
+        async function afficherMessages(topicId, category) {
+            messagesDiv.innerHTML = '';
+            let messages = [];
+            try {
+                if (category === 'Général') {
+                    // Chat général : topic unique "Général"
+                    if (!generalTopicId) {
+                        // Crée le topic général s'il n'existe pas
+                        const general = await ForumAPI.getTopics('Général');
+                        if (general.length === 0) {
+                            const created = await ForumAPI.createTopic({ title: 'Discussion générale', author: 'Système', category: 'Général' });
+                            generalTopicId = created.id;
+                        } else {
+                            generalTopicId = general[0].id;
+                        }
+                    }
+                    messages = await ForumAPI.getMessages(generalTopicId);
+                } else {
+                    // Autres catégories : topic sélectionné
+                    if (topicId == null) {
+                        messagesDiv.innerHTML = '<span style="color:#aaa;">Sélectionnez un sujet pour voir les messages.</span>';
+                        return;
+                    }
+                    messages = await ForumAPI.getMessages(topicId);
+                }
+            } catch (e) {
+                messagesDiv.innerHTML = '<span style="color:#b30000;">Erreur de chargement des messages</span>';
+                return;
+            }
+            if (!messages.length) {
+                messagesDiv.innerHTML = '<span style="color:#aaa;">Aucun message pour ce sujet.</span>';
+            } else {
+                messages.forEach(message => {
+                    const isMe = (localStorage.getItem('user_nom') || 'Anonyme') === message.utilisateur;
+                    messagesDiv.innerHTML += `
+                        <div class="forum-message${isMe ? ' me' : ''}">
+                            <div class="forum-message-avatar">${(message.utilisateur||'A')[0].toUpperCase()}</div>
+                            <div>
+                                <div class="forum-message-content">${message.contenu}</div>
+                                <div class="forum-message-meta">${message.utilisateur || 'Anonyme'} • ${new Date(message.timestamp).toLocaleString()}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        // Affiche la liste des sujets pour la catégorie (sauf Général qui n'a qu'un chat)
+        async function renderTopics(category) {
+            tbody.innerHTML = '';
+            if (category === 'Général') {
+                empty.style.display = 'none';
+                // Affiche le chat général
+                await afficherMessages(null, 'Général');
+                messageForm.style.display = 'flex';
+                messageForm.removeAttribute('data-topic');
+                return;
+            }
+            let topicsList = [];
+            try {
+                topicsList = await ForumAPI.getTopics(category);
+            } catch (e) {
+                empty.style.display = '';
+                tbody.innerHTML = '<tr><td colspan="4" style="color:#b30000">Erreur de chargement des sujets</td></tr>';
+                return;
+            }
+            if (!topicsList.length) {
+                empty.style.display = '';
+            } else {
+                empty.style.display = 'none';
+                topicsList.forEach((topic, idx) => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `<td><a href="#" class="forum-topic-title" data-topic-id="${topic.id}">${topic.title}</a></td><td>${topic.author}</td><td>${topic.replies || 0}</td><td>${topic.lastReply || '-'}</td>`;
+                    tbody.appendChild(tr);
+                });
+            }
+            // Affiche les messages du premier sujet par défaut
+            if (topicsList.length) {
+                await afficherMessages(topicsList[0].id, category);
+                messageForm.style.display = 'flex';
+                messageForm.setAttribute('data-topic', topicsList[0].id);
+            } else {
+                messagesDiv.innerHTML = '<span style="color:#aaa;">Aucun sujet pour cette catégorie.</span>';
+                messageForm.style.display = 'none';
+            }
+        }
+
+        // Gestion du clic sur les catégories
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', async function() {
+                currentCategory = btn.dataset.category;
+                categoryBtns.forEach(b => b.style.background = '#fff');
+                btn.style.background = '#ffeaea';
+                forumTitle.textContent = `Forum VTT - ${currentCategory}`;
+                await renderTopics(currentCategory);
+            });
+        });
+
+        // Création d'un nouveau sujet (sauf Général)
+        document.getElementById('btn-nouveau-sujet').addEventListener('click', async function() {
+            if (currentCategory === 'Général') {
+                alert('La catégorie Général fonctionne comme un chat ouvert.');
+                return;
+            }
+            const titre = prompt('Titre du sujet :');
+            if (!titre) return;
+            const auteur = localStorage.getItem('user_nom') || 'Anonyme';
+            const forumError = document.getElementById('forum-error');
+            forumError.textContent = '';
+            try {
+                await ForumAPI.createTopic({ title: titre, author: auteur, category: currentCategory });
+                await renderTopics(currentCategory);
+            } catch (e) {
+                alert('Erreur lors de la création du sujet');
+                forumError.textContent = 'Erreur lors de la création du sujet : ' + (e.message || e);
+            }
+        });
+
+        // Clic sur un sujet (hors Général)
+        tbody.addEventListener('click', async function(e) {
+            const link = e.target.closest('.forum-topic-title');
+            if (link) {
+                e.preventDefault();
+                const topicId = link.dataset.topicId;
+                await afficherMessages(topicId, currentCategory);
+                messageForm.style.display = 'flex';
+                messageForm.setAttribute('data-topic', topicId);
+            }
+        });
+
+        // Envoi d'un message (chat général ou sujet sélectionné)
+        messageForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const messageContent = messageInput.value.trim();
+            if (!messageContent) return;
+            const userName = localStorage.getItem('user_nom') || 'Anonyme';
+            try {
+                if (currentCategory === 'Général') {
+                    if (!generalTopicId) {
+                        // Crée le topic général si besoin
+                        const general = await ForumAPI.getTopics('Général');
+                        if (general.length === 0) {
+                            const created = await ForumAPI.createTopic({ title: 'Discussion générale', author: 'Système', category: 'Général' });
+                            generalTopicId = created.id;
+                        } else {
+                            generalTopicId = general[0].id;
+                        }
+                    }
+                    await ForumAPI.postMessage(generalTopicId, { utilisateur: userName, contenu: messageContent });
+                    messageInput.value = '';
+                    await afficherMessages(generalTopicId, 'Général');
+                } else {
+                    const topicId = messageForm.getAttribute('data-topic');
+                    if (!topicId) return;
+                    await ForumAPI.postMessage(topicId, { utilisateur: userName, contenu: messageContent });
+                    messageInput.value = '';
+                    await afficherMessages(topicId, currentCategory);
+                    await renderTopics(currentCategory);
+                }
+            } catch (e) {
+                alert('Erreur lors de l\'envoi du message');
+            }
+        });
+
+        // Initialisation : sélectionne Général par défaut
+        categoryBtns.forEach(b => b.style.background = '#fff');
+        categoryBtns[0].style.background = '#ffeaea';
+        forumTitle.textContent = `Forum VTT - Général`;
+        renderTopics('Général');
+    });
+    </script>

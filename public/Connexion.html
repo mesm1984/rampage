@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Red Bull Rampage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/awards-styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/header-styles.css">
+    <style>
+        .login-container {
+            max-width: 500px;
+            margin: 60px auto 100px;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .login-header h1 {
+            color: #e00;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .login-header p {
+            color: #666;
+            margin: 0;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        
+        .form-control:focus {
+            border-color: #e00;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(238,0,0,0.1);
+        }
+        
+        .input-with-icon {
+            position: relative;
+        }
+        
+        .input-with-icon i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+        
+        .input-with-icon input {
+            padding-left: 45px;
+        }
+        
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .remember-me input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+        }
+        
+        .forgot-password {
+            color: #e00;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        
+        .btn-login {
+            width: 100%;
+            padding: 14px;
+            background: #e00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn-login:hover {
+            background: #c00;
+        }
+        
+        .login-footer {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .login-footer p {
+            color: #666;
+            margin: 0 0 15px 0;
+        }
+        
+        .btn-register {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #f5f5f5;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 1px solid #ddd;
+        }
+        
+        .btn-register:hover {
+            background: #e00;
+            color: white;
+            border-color: #e00;
+        }
+        
+        .social-login {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .social-login p {
+            position: relative;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        
+        .social-login p::before,
+        .social-login p::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 30%;
+            height: 1px;
+            background: #eee;
+        }
+        
+        .social-login p::before {
+            left: 0;
+        }
+        
+        .social-login p::after {
+            right: 0;
+        }
+        
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-google {
+            background: #DB4437;
+        }
+        
+        .btn-facebook {
+            background: #4267B2;
+        }
+        
+        .btn-twitter {
+            background: #1DA1F2;
+        }
+        
+        @media (max-width: 600px) {
+            .login-container {
+                margin: 30px 15px 60px;
+                padding: 25px;
+            }
+            
+            .login-header h1 {
+                font-size: 1.7em;
+            }
+            
+            .remember-forgot {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .social-login p::before,
+            .social-login p::after {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header avec logo et navigation -->
+    <header>
+        <div class="conteneur-entete">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/red-bull-rampage-2021-logo.avif" alt="Red Bull Rampage Logo" width="250">
+                </a>
+            </div>
+
+            <!-- Navigation principale -->
+            <nav class="navigation-principale" role="navigation" aria-label="Menu principal">
+                <ul class="liste-navigation">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="Podiums.html">Podiums</a></li>
+                    <li><a href="Classement_Masculin.html">Classement Masculin</a></li>
+                    <li><a href="Classement_Feminin.html">Classement Féminin</a></li>
+                    <li><a href="Forum.html">Forum</a></li>
+                    <li id="element-connexion"><a href="Connexion.html" class="actif">Connexion</a></li>
+                    <li id="element-utilisateur" style="display: none;">
+                        <a href="#" id="email-utilisateur"></a>
+                        <a href="#" id="bouton-deconnexion">Déconnexion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <div class="login-header">
+                <h1>Connexion</h1>
+                <p>Accédez à votre compte pour profiter de toutes les fonctionnalités</p>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" class="form-control" placeholder="votre@email.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" class="form-control" placeholder="Votre mot de passe" required>
+                    </div>
+                </div>
+                <div class="remember-forgot">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        Se souvenir de moi
+                    </label>
+                    <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+                </div>
+                <button type="submit" class="btn-login">Se connecter</button>
+            </form>
+        </div>
+        <div class="login-container" style="margin-top: 30px;">
+            <div class="login-header">
+                <h1>Créer un compte</h1>
+                <p>Rejoignez la communauté Red Bull Rampage</p>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="register-username">Nom d'utilisateur</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="register-username" class="form-control" required placeholder="Choisissez un nom d'utilisateur" minlength="3" maxlength="50" autocomplete="username">
+                    </div>
+                    <small class="error-message" id="username-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Adresse email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="register-email" class="form-control" required placeholder="votre@email.com" autocomplete="email">
+                    </div>
+                    <small class="error-message" id="email-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Mot de passe</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="register-password" class="form-control" required placeholder="Créez un mot de passe" minlength="8" autocomplete="new-password">
+                    </div>
+                    <small class="form-text text-muted">Le mot de passe doit contenir au moins 8 caractères, dont une majuscule, une minuscule et un chiffre.</small>
+                    <small class="error-message" id="password-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Confirmer le mot de passe</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="register-confirm-password" class="form-control" required placeholder="Confirmez votre mot de passe" minlength="8" autocomplete="new-password">
+                    </div>
+                    <small class="error-message" id="confirm-password-error"></small>
+                </div>
+                <button type="submit" class="btn-login" id="register-submit" disabled>
+                    <span id="register-button-text">Créer mon compte</span>
+                    <span id="register-spinner" class="spinner" style="display: none;"><i class="fas fa-spinner fa-spin"></i></span>
+                </button>
+                <div class="success-message" id="register-success" style="display:none;">Inscription réussie ! Vous pouvez maintenant vous connecter.</div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="pied-de-page">
+        <div class="contenu-pied-de-page">
+            <div class="footer-column">
+                <div class="footer-section">
+                    <h4>À propos de Red Bull Rampage</h4>
+                    <p>La compétition de freeride VTT la plus extrême au monde, mettant en vedette les meilleurs riders internationaux.</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@redbullrampage.com</p>
+                    <p>Virgin, Utah, États-Unis</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="Podiums.html">Podiums</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="Classement_Masculin.html">Classement Masculin</a></li>
+                        <li><a href="Classement_Feminin.html">Classement Féminin</a></li>
+                        <li><a href="Forum.html">Forum</a></li>
+                        <li><a href="Connexion.html">Connexion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Red Bull Rampage. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        // Gestion de la soumission du formulaire
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Récupération des valeurs du formulaire
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('remember').checked;
+            
+            // Ici, vous pourriez ajouter la logique de connexion
+            console.log('Tentative de connexion avec:', { email, remember });
+            
+            // Simulation de connexion réussie
+            setTimeout(() => {
+                // Stockage de l'état de connexion dans localStorage
+                if(remember) {
+                    localStorage.setItem('userEmail', email);
+                } else {
+                    sessionStorage.setItem('userEmail', email);
+                }
+                
+                // Redirection vers la page précédente ou l'accueil
+                const urlParams = new URLSearchParams(window.location.search);
+                const redirectUrl = urlParams.get('redirect') || 'Forum.html';
+                window.location.href = redirectUrl;
+            }, 1000);
+        });
+        
+        // Remplir automatiquement l'email si enregistré
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedEmail = localStorage.getItem('userEmail') || sessionStorage.getItem('userEmail');
+            if(savedEmail) {
+                document.getElementById('email').value = savedEmail;
+                document.getElementById('remember').checked = !!localStorage.getItem('userEmail');
+            }
+        });
+    </script>
+    
+    <script src="js/scroll-header.js"></script>
+    
+    <!-- Modal d'inscription -->
+    
+    <style>
+        /* Styles pour le modal */
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); overflow: auto; }
+        .modal-content { background-color: #fff; margin: 5% auto; padding: 30px; border-radius: 10px; max-width: 500px; width: 90%; position: relative; animation: modalopen 0.3s; }
+        @keyframes modalopen { from {opacity: 0; transform: translateY(-50px);} to {opacity: 1; transform: translateY(0);} }
+        .close { position: absolute; right: 20px; top: 15px; color: #aaa; font-size: 28px; font-weight: bold; cursor: pointer; }
+        .close:hover { color: #333; }
+        .error-message { color: #e00; font-size: 0.85em; margin-top: 5px; display: block; }
+        .success-message { color: #28a745; font-size: 0.9em; margin-top: 10px; display: block; text-align: center; }
+        .spinner { margin-left: 10px; display: inline-block; }
+        .btn-login:disabled { background-color: #cccccc; cursor: not-allowed; }
+        /* Forum style "Moodle" */
+        .forum-section { margin-top: 40px; background: #f8f9fb; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 0 0 30px 0; }
+        .forum-header-bar { background: #fff; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom: 1px solid #eee; padding: 18px 30px; font-weight: 700; font-size: 1.15em; color: #e00; display: flex; align-items: center; }
+        .dialogue-title { flex: 1; }
+        .forum-toolbar { display: flex; justify-content: space-between; align-items: center; padding: 18px 30px 0 30px; flex-wrap: wrap; gap: 10px; }
+        .forum-search-group { display: flex; align-items: center; gap: 8px; }
+        .forum-search { padding: 8px 12px; border: 1px solid #bbb; border-radius: 5px; font-size: 1em; }
+        .forum-search-btn { background: #1976d2; color: #fff; border: none; border-radius: 5px; padding: 8px 18px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        .forum-search-btn:hover { background: #125ea2; }
+        .forum-advanced-search { color: #1976d2; text-decoration: underline; font-size: 0.98em; margin-left: 8px; }
+        .forum-advanced-search:hover { text-decoration: none; }
+        .forum-new-discussion { background: #4267B2; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; font-weight: 600; font-size: 1em; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; gap: 8px; margin-top: 0; }
+        .forum-new-discussion.bottom { margin: 20px auto 0 auto; display: block; }
+        .forum-new-discussion:hover { background: #274080; }
+        .forum-section-title { font-weight: 700; color: #1976d2; font-size: 1.1em; margin: 30px 0 10px 30px; }
+        .forum-discussions-title { color: #e00; }
+        .forum-table { width: 95%; margin: 0 auto 0 auto; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,0.04); }
+        .forum-table th, .forum-table td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #eee; font-size: 1em; }
+        .forum-table th { background: #f5f5f5; font-weight: 700; color: #333; }
+        .forum-table tr:last-child td { border-bottom: none; }
+        .forum-table-discussions { border: 2px solid #e00; border-radius: 10px; }
+        .forum-author { color: #888; font-size: 0.95em; }
+        @media (max-width: 900px) {
+            .forum-table, .forum-table th, .forum-table td { font-size: 0.95em; }
+            .forum-toolbar, .forum-section-title { padding-left: 10px; padding-right: 10px; }
+        }
+        @media (max-width: 600px) {
+            .forum-section { padding: 0 0 10px 0; }
+            .forum-header-bar, .forum-toolbar, .forum-section-title { padding-left: 10px; padding-right: 10px; }
+            .forum-table { width: 100%; }
+            .forum-new-discussion { width: 100%; }
+        }
+    </style>
+    
+    <script>
+        // Gestion du modal d'inscription
+        const registerModal = document.getElementById('registerModal');
+        const registerBtn = document.querySelector('.btn-register');
+        const closeBtn = document.querySelector('.close');
+        const showLoginBtn = document.getElementById('show-login');
+        const registerForm = document.getElementById('registerForm');
+        const registerSubmit = document.getElementById('register-submit');
+        const registerSuccess = document.getElementById('register-success');
+        // Champs
+        const usernameInput = document.getElementById('register-username');
+        const emailInput = document.getElementById('register-email');
+        const passwordInput = document.getElementById('register-password');
+        const confirmInput = document.getElementById('register-confirm-password');
+        // Erreurs
+        const usernameError = document.getElementById('username-error');
+        const emailError = document.getElementById('email-error');
+        const passwordError = document.getElementById('password-error');
+        const confirmError = document.getElementById('confirm-password-error');
+
+        // Ouvrir le modal d'inscription
+        if (registerBtn) {
+            registerBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                registerModal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+                registerSuccess.style.display = 'none';
+                registerForm.reset();
+                clearErrors();
+                registerSubmit.disabled = true;
+            });
+        }
+
+        // Fermer le modal
+        function closeModal() {
+            registerModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        window.addEventListener('click', function(e) {
+            if (e.target === registerModal) closeModal();
+        });
+
+        // Validation en temps réel
+        function validateUsername() {
+            const value = usernameInput.value.trim();
+            if (value.length < 3) {
+                usernameError.textContent = "Au moins 3 caractères.";
+                return false;
+            }
+            usernameError.textContent = "";
+            return true;
+        }
+        function validateEmail() {
+            const value = emailInput.value.trim();
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regex.test(value)) {
+                emailError.textContent = "Adresse email invalide.";
+                return false;
+            }
+            emailError.textContent = "";
+            return true;
+        }
+        function validatePassword() {
+            const value = passwordInput.value;
+            const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+            if (!regex.test(value)) {
+                passwordError.textContent = "8 caractères, majuscule, minuscule, chiffre.";
+                return false;
+            }
+            passwordError.textContent = "";
+            return true;
+        }
+        function validateConfirm() {
+            if (confirmInput.value !== passwordInput.value || confirmInput.value.length === 0) {
+                confirmError.textContent = "Les mots de passe ne correspondent pas.";
+                return false;
+            }
+            confirmError.textContent = "";
+            return true;
+        }
+        function clearErrors() {
+            usernameError.textContent = "";
+            emailError.textContent = "";
+            passwordError.textContent = "";
+            confirmError.textContent = "";
+        }
+        function checkForm() {
+            const valid = validateUsername() & validateEmail() & validatePassword() & validateConfirm();
+            registerSubmit.disabled = !valid;
+            return !!valid;
+        }
+        usernameInput.addEventListener('input', checkForm);
+        emailInput.addEventListener('input', checkForm);
+        passwordInput.addEventListener('input', checkForm);
+        confirmInput.addEventListener('input', checkForm);
+
+        // Soumission du formulaire d'inscription
+        registerForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (!checkForm()) return;
+            registerSubmit.disabled = true;
+            document.getElementById('register-spinner').style.display = 'inline-block';
+            // Appel API pour enregistrer l'utilisateur
+            fetch('/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: usernameInput.value.trim(),
+                    email: emailInput.value.trim(),
+                    password: passwordInput.value
+                })
+            })
+            .then(async response => {
+                document.getElementById('register-spinner').style.display = 'none';
+                if (response.ok) {
+                    registerSuccess.textContent = 'Inscription réussie ! Vous pouvez maintenant vous connecter.';
+                    registerSuccess.style.display = 'block';
+                    registerForm.reset();
+                    clearErrors();
+                    registerSubmit.disabled = true;
+                } else {
+                    const data = await response.json().catch(() => ({}));
+                    let msg = data.message || 'Erreur lors de l\'inscription.';
+                    registerSuccess.textContent = msg;
+                    registerSuccess.style.display = 'block';
+                    registerSuccess.style.color = '#e00';
+                    registerSubmit.disabled = false;
+                }
+            })
+            .catch(() => {
+                document.getElementById('register-spinner').style.display = 'none';
+                registerSuccess.textContent = 'Erreur réseau ou serveur.';
+                registerSuccess.style.display = 'block';
+                registerSuccess.style.color = '#e00';
+                registerSubmit.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>

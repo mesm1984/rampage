@@ -1,0 +1,45 @@
+{
+  "name": "redbull-rampage-api",
+  "version": "1.0.0",
+  "description": "API pour le site Red Bull Rampage VTT Freeride & Descente",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "test": "jest",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed": "npx sequelize-cli db:seed:all"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.7",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.3"
+  },
+  "keywords": [
+    "vtt",
+    "freeride",
+    "api",
+    "redbull",
+    "rampage",
+    "nodejs",
+    "express",
+    "mysql",
+    "jwt"
+  ],
+  "author": "Votre Nom",
+  "license": "MIT",
+  "type": "commonjs"
+}

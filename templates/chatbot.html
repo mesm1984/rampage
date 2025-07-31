@@ -1,0 +1,24 @@
+<!-- Template du chatbot -->
+<button id="chatbot-toggle" class="chatbot-toggle" aria-label="Ouvrir le chatbot" title="Ouvrir le chatbot">
+    <i class="fas fa-robot"></i>
+</button>
+
+<div id="chatbot-container" class="chatbot-container">
+    <div class="chatbot-header">
+        <h3>Assistant Red Bull Rampage</h3>
+        <button class="chatbot-close" aria-label="Fermer le chatbot">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+        <!-- Les messages du chatbot seront insérés ici dynamiquement -->
+    </div>
+    <div class="chatbot-input-container">
+        <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Posez votre question..." aria-label="Votre message">
+        <button id="chatbot-send" class="chatbot-send" aria-label="Envoyer">
+            <i class="fas fa-paper-plane"></i>
+        </button>
+    </div>
+    <div class="chatbot-categories"></div>
+    <button class="chatbot-reset">Rafraîchir la conversation</button>
+</div>
