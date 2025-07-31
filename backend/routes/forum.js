@@ -40,7 +40,17 @@ router.get('/messages/:topicId', (req, res) => {
 router.post('/messages/:topicId', (req, res) => {
   const { topicId } = req.params;
   const { utilisateur, contenu } = req.body;
-  if (!utilisateur || !contenu) return res.status(400).json({ error: 'Champs manquants' });
+  console.log('POST /api/forum/messages/' + topicId, 'body:', req.body);
+  // Vérifie l'existence du topic
+  const topic = topics.find(t => t.id == topicId);
+  if (!topic) {
+    console.error('Topic inexistant pour topicId:', topicId);
+    return res.status(404).json({ error: 'Topic inexistant' });
+  }
+  if (!utilisateur || !contenu) {
+    console.error('Champs manquants:', req.body);
+    return res.status(400).json({ error: 'Champs manquants' });
+  }
   const msg = {
     utilisateur,
     contenu,
@@ -49,10 +59,8 @@ router.post('/messages/:topicId', (req, res) => {
   if (!messages[topicId]) messages[topicId] = [];
   messages[topicId].push(msg);
   // Met à jour le topic
-  if (topics[topicId]) {
-    topics[topicId].replies = messages[topicId].length;
-    topics[topicId].lastReply = new Date().toLocaleString();
-  }
+  topic.replies = messages[topicId].length;
+  topic.lastReply = new Date().toLocaleString();
   res.status(201).json(msg);
 });
 

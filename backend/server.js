@@ -22,6 +22,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+// Routes API
+app.use('/api/auth', authRoutes);
+app.use('/api/forum', forumRoutes);
+
 const dataPath = path.join(__dirname, '..', 'data');
 const publicPath = path.join(__dirname, '..', 'public');
 // Servir les fichiers statiques du dossier public

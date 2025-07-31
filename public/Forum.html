@@ -29,6 +29,16 @@
     .forum-new-topic:hover { background: #b30000; }
     .forum-layout { display: flex; gap: 32px; }
     .forum-sidebar { width: 260px; background: #fafafa; border-radius: 10px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .forum-category-btn.selected, .forum-category-btn:focus {
+        background: #e10600 !important;
+        color: #fff !important;
+        outline: 2px solid #e10600;
+        font-weight: bold;
+    }
+    .forum-topic-selected {
+        background: #ffeaea !important;
+        font-weight: bold;
+    }
     .forum-main { flex: 1; display: flex; flex-direction: column; }
     .forum-topics { width: 100%; border-collapse: collapse; margin-bottom: 32px; }
     .forum-topics th, .forum-topics td { padding: 12px 10px; border-bottom: 1px solid #eee; }
@@ -44,17 +54,21 @@
         display: flex;
         flex-direction: column;
         height: 420px;
-        max-width: 700px;
-        margin: 0 auto 32px auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 32px 0;
         border: 1.5px solid #eaeaea;
     }
     .forum-messages {
         flex: 1;
         overflow-y: auto;
-        padding: 24px 24px 0 24px;
+        padding: 24px 32px 0 32px;
         display: flex;
         flex-direction: column;
         gap: 18px;
+        min-height: 120px;
+        border-bottom: 1px solid #ececec;
+        box-sizing: border-box;
     }
     .forum-message {
         display: flex;
@@ -100,33 +114,40 @@
     .forum-inputbox {
         display: flex;
         align-items: center;
-        border-top: 1.5px solid #eaeaea;
-        padding: 18px 24px;
+        border-top: none;
+        padding: 18px 32px 18px 32px;
         background: #fafbfc;
         gap: 12px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .forum-inputbox input {
         flex: 1;
-        padding: 12px 16px;
+        padding: 14px 18px;
         border-radius: 8px;
-        border: 1px solid #ddd;
+        border: 1.5px solid #ececec;
         font-size: 1em;
         outline: none;
         transition: border 0.2s;
+        background: #fff;
+        box-shadow: none;
     }
     .forum-inputbox input:focus {
         border: 1.5px solid #e10600;
+        background: #fff;
     }
     .forum-inputbox button {
         background: #e10600;
         color: #fff;
         border: none;
         border-radius: 8px;
-        padding: 10px 22px;
+        padding: 12px 32px;
         font-size: 1em;
-        font-weight: 600;
+        font-weight: 700;
         cursor: pointer;
         transition: background 0.2s;
+        box-shadow: none;
+        letter-spacing: 1px;
     }
     .forum-inputbox button:hover {
         background: #b30000;
@@ -174,10 +195,10 @@
             <aside class="forum-sidebar">
                 <h3>Catégories</h3>
                 <ul id="forum-categories" style="list-style:none; padding:0; margin:0;">
-                    <li><button type="button" class="forum-category-btn" data-category="Général" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Général</button></li>
-                    <li><button type="button" class="forum-category-btn" data-category="Matériel" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Matériel</button></li>
-                    <li><button type="button" class="forum-category-btn" data-category="Nutrition" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Nutrition</button></li>
-                    <li><button type="button" class="forum-category-btn" data-category="Compétition" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Compétition</button></li>
+                    <li><button type="button" class="forum-category-btn" data-category="Général" aria-label="Catégorie Général" tabindex="0" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Général</button></li>
+                    <li><button type="button" class="forum-category-btn" data-category="Matériel" aria-label="Catégorie Matériel" tabindex="0" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Matériel</button></li>
+                    <li><button type="button" class="forum-category-btn" data-category="Nutrition" aria-label="Catégorie Nutrition" tabindex="0" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Nutrition</button></li>
+                    <li><button type="button" class="forum-category-btn" data-category="Compétition" aria-label="Catégorie Compétition" tabindex="0" style="background:#fff;color:#222;border:1px solid #e10600;border-radius:5px;padding:7px 16px;margin-bottom:7px;width:100%;text-align:left;cursor:pointer;transition:background 0.2s;">Compétition</button></li>
                 </ul>
                 <hr>
                 <h4>Recherche</h4>
@@ -185,13 +206,13 @@
             </aside>
             <section class="forum-main">
     <!-- Table des sujets -->
-    <table class="forum-topics">
+    <table class="forum-topics" aria-label="Liste des sujets du forum">
         <thead>
             <tr>
-                <th>Sujet</th>
-                <th>Auteur</th>
-                <th>Réponses</th>
-                <th>Dernier message</th>
+                <th scope="col">Sujet</th>
+                <th scope="col">Auteur</th>
+                <th scope="col">Réponses</th>
+                <th scope="col">Dernier message</th>
             </tr>
         </thead>
         <tbody id="forum-topics-list">
@@ -199,6 +220,7 @@
         </tbody>
     </table>
     <div id="forum-empty" style="color:#888; margin-bottom:24px;">Aucun sujet pour cette catégorie.</div>
+    <nav id="forum-pagination" class="flex justify-center items-center gap-2 mb-4" aria-label="Pagination des sujets" style="display:none;"></nav>
 
     <!-- Nouvelle zone de discussion moderne -->
     <div class="forum-chatbox">
@@ -228,6 +250,8 @@
         let topics = [];
         let currentCategory = 'Général';
         let currentTopicIdx = null;
+        let currentPage = 1;
+        let topicsPerPage = 5;
         const tbody = document.getElementById('forum-topics-list');
         const empty = document.getElementById('forum-empty');
         const categoryBtns = document.querySelectorAll('.forum-category-btn');
@@ -288,11 +312,12 @@
         }
 
         // Affiche la liste des sujets pour la catégorie (sauf Général qui n'a qu'un chat)
-        async function renderTopics(category) {
+        async function renderTopics(category, page = 1) {
             tbody.innerHTML = '';
+            currentPage = page;
             if (category === 'Général') {
                 empty.style.display = 'none';
-                // Affiche le chat général
+                document.getElementById('forum-pagination').style.display = 'none';
                 await afficherMessages(null, 'Général');
                 messageForm.style.display = 'flex';
                 messageForm.removeAttribute('data-topic');
@@ -304,23 +329,61 @@
             } catch (e) {
                 empty.style.display = '';
                 tbody.innerHTML = '<tr><td colspan="4" style="color:#b30000">Erreur de chargement des sujets</td></tr>';
+                document.getElementById('forum-pagination').style.display = 'none';
                 return;
             }
+            // Pagination
+            const totalPages = Math.ceil(topicsList.length / topicsPerPage) || 1;
+            const startIdx = (currentPage - 1) * topicsPerPage;
+            const endIdx = startIdx + topicsPerPage;
+            const paginatedTopics = topicsList.slice(startIdx, endIdx);
+            // Affichage des sujets
             if (!topicsList.length) {
                 empty.style.display = '';
+                document.getElementById('forum-pagination').style.display = 'none';
             } else {
                 empty.style.display = 'none';
-                topicsList.forEach((topic, idx) => {
+                paginatedTopics.forEach((topic, idx) => {
                     const tr = document.createElement('tr');
-                    tr.innerHTML = `<td><a href="#" class="forum-topic-title" data-topic-id="${topic.id}">${topic.title}</a></td><td>${topic.author}</td><td>${topic.replies || 0}</td><td>${topic.lastReply || '-'}</td>`;
+                    tr.innerHTML = `<td><a href="#" class="forum-topic-title" data-topic-id="${topic.id}" tabindex="0" aria-label="Sujet : ${topic.title}">${topic.title}</a></td><td>${topic.author}</td><td>${topic.replies || 0}</td><td>${topic.lastReply || '-'}</td>`;
+                    if (idx === 0 && currentPage === 1) tr.classList.add('forum-topic-selected');
                     tbody.appendChild(tr);
                 });
+                // Pagination
+                const pagination = document.getElementById('forum-pagination');
+                pagination.innerHTML = '';
+                pagination.style.display = totalPages > 1 ? '' : 'none';
+                if (totalPages > 1) {
+                    const prevBtn = document.createElement('button');
+                    prevBtn.innerHTML = '&lt;';
+                    prevBtn.disabled = currentPage === 1;
+                    prevBtn.setAttribute('aria-label', 'Page précédente');
+                    prevBtn.onclick = () => renderTopics(category, currentPage - 1);
+                    pagination.appendChild(prevBtn);
+                    for (let i = 1; i <= totalPages; i++) {
+                        const pageBtn = document.createElement('button');
+                        pageBtn.textContent = i;
+                        pageBtn.className = (i === currentPage) ? 'forum-category-btn selected' : 'forum-category-btn';
+                        pageBtn.setAttribute('aria-label', `Page ${i}`);
+                        pageBtn.onclick = () => renderTopics(category, i);
+                        pagination.appendChild(pageBtn);
+                    }
+                    const nextBtn = document.createElement('button');
+                    nextBtn.innerHTML = '&gt;';
+                    nextBtn.disabled = currentPage === totalPages;
+                    nextBtn.setAttribute('aria-label', 'Page suivante');
+                    nextBtn.onclick = () => renderTopics(category, currentPage + 1);
+                    pagination.appendChild(nextBtn);
+                }
             }
-            // Affiche les messages du premier sujet par défaut
-            if (topicsList.length) {
-                await afficherMessages(topicsList[0].id, category);
+            // Affiche les messages du premier sujet de la page par défaut
+            if (paginatedTopics.length) {
+                await afficherMessages(paginatedTopics[0].id, category);
                 messageForm.style.display = 'flex';
-                messageForm.setAttribute('data-topic', topicsList[0].id);
+                messageForm.setAttribute('data-topic', paginatedTopics[0].id);
+                // Indicateur visuel sur le sujet sélectionné
+                const trs = tbody.querySelectorAll('tr');
+                if (trs[0]) trs[0].classList.add('forum-topic-selected');
             } else {
                 messagesDiv.innerHTML = '<span style="color:#aaa;">Aucun sujet pour cette catégorie.</span>';
                 messageForm.style.display = 'none';
@@ -331,10 +394,11 @@
         categoryBtns.forEach(btn => {
             btn.addEventListener('click', async function() {
                 currentCategory = btn.dataset.category;
-                categoryBtns.forEach(b => b.style.background = '#fff');
-                btn.style.background = '#ffeaea';
+                categoryBtns.forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
                 forumTitle.textContent = `Forum VTT - ${currentCategory}`;
-                await renderTopics(currentCategory);
+                await renderTopics(currentCategory, 1);
+                btn.focus();
             });
         });
 
@@ -364,9 +428,24 @@
             if (link) {
                 e.preventDefault();
                 const topicId = link.dataset.topicId;
+                // Retirer l'indicateur sur tous les sujets
+                tbody.querySelectorAll('tr').forEach(tr => tr.classList.remove('forum-topic-selected'));
+                // Ajouter l'indicateur sur la ligne sélectionnée
+                link.closest('tr').classList.add('forum-topic-selected');
                 await afficherMessages(topicId, currentCategory);
                 messageForm.style.display = 'flex';
                 messageForm.setAttribute('data-topic', topicId);
+                link.focus();
+            }
+        });
+        // Accessibilité : navigation clavier sur les sujets
+        tbody.addEventListener('keydown', async function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                const link = e.target.closest('.forum-topic-title');
+                if (link) {
+                    e.preventDefault();
+                    link.click();
+                }
             }
         });
 
@@ -405,9 +484,9 @@
         });
 
         // Initialisation : sélectionne Général par défaut
-        categoryBtns.forEach(b => b.style.background = '#fff');
-        categoryBtns[0].style.background = '#ffeaea';
+        categoryBtns.forEach(b => b.classList.remove('selected'));
+        categoryBtns[0].classList.add('selected');
         forumTitle.textContent = `Forum VTT - Général`;
-        renderTopics('Général');
+        renderTopics('Général', 1);
     });
     </script>
