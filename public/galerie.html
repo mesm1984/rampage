@@ -130,6 +130,11 @@
             </div>
         </div>
     </main>
+    <!-- Lightbox -->
+    <div id="lightbox" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;">
+      <span id="lightbox-close" style="position:absolute;top:32px;right:48px;font-size:2.5rem;color:#fff;cursor:pointer;z-index:10001;user-select:none;">&times;</span>
+      <img id="lightbox-img" src="" alt="" style="max-width:90vw;max-height:80vh;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+    </div>
     
     <footer class="pied-de-page">
         <div class="contenu-pied-de-page">
@@ -185,10 +190,8 @@
             const elementUtilisateur = document.getElementById('element-utilisateur');
             const emailUtilisateur = document.getElementById('email-utilisateur');
             const boutonDeconnexion = document.getElementById('bouton-deconnexion');
-            
             // Vérifier si l'utilisateur est connecté
             const utilisateurConnecte = localStorage.getItem('utilisateurConnecte');
-            
             if (utilisateurConnecte) {
                 // Afficher les informations de l'utilisateur
                 const utilisateur = JSON.parse(utilisateurConnecte);
@@ -200,12 +203,36 @@
                 elementConnexion.style.display = 'block';
                 elementUtilisateur.style.display = 'none';
             }
-            
             // Gérer la déconnexion
             boutonDeconnexion.addEventListener('click', function(e) {
                 e.preventDefault();
                 localStorage.removeItem('utilisateurConnecte');
                 window.location.href = 'index.html';
+            });
+
+            // Lightbox galerie
+            const galleryImgs = document.querySelectorAll('.gallery-item img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxClose = document.getElementById('lightbox-close');
+            galleryImgs.forEach(img => {
+                img.style.cursor = 'zoom-in';
+                img.addEventListener('click', function() {
+                    lightboxImg.src = this.src;
+                    lightboxImg.alt = this.alt;
+                    lightbox.style.display = 'flex';
+                });
+            });
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                lightboxImg.src = '';
+            }
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) closeLightbox();
+            });
+            document.addEventListener('keydown', function(e) {
+                if (lightbox.style.display === 'flex' && (e.key === 'Escape' || e.key === 'Esc')) closeLightbox();
             });
         });
     </script>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/css/header-styles.css">
     <!-- Scripts principaux -->
     <script src="js/logo-scroll.js" defer></script>
+    <script src="js/forum-api.js"></script>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -177,9 +178,9 @@
                     <li><a href="Classement_Feminin.html">Classement Féminin</a></li>
                     <li><a href="Forum.html" class="actif">Forum</a></li>
                     <li id="element-connexion"><a href="Connexion.html">Connexion</a></li>
-                    <li id="element-utilisateur" style="display: none;">
-                        <a href="#" id="email-utilisateur"></a>
-                        <a href="#" id="bouton-deconnexion">Déconnexion</a>
+                    <li id="element-utilisateur" style="display:none;">
+                        <span id="nom-utilisateur"></span>
+                        <button id="bouton-deconnexion" style="background:#e10600;color:#fff;border:none;border-radius:6px;padding:7px 18px;cursor:pointer;margin-left:10px;">Déconnexion</button>
                     </li>
                 </ul>
             </nav>
@@ -247,6 +248,26 @@
     <script>
     // Forum connecté à l'API Express
     document.addEventListener('DOMContentLoaded', function() {
+        // Affiche le bouton déconnexion si l'utilisateur est connecté
+        const userNom = localStorage.getItem('user_nom');
+        const elementUtilisateur = document.getElementById('element-utilisateur');
+        const elementConnexion = document.getElementById('element-connexion');
+        if (userNom) {
+            elementUtilisateur.style.display = 'flex';
+            document.getElementById('nom-utilisateur').textContent = userNom;
+            elementConnexion.style.display = 'none';
+        } else {
+            elementUtilisateur.style.display = 'none';
+            elementConnexion.style.display = '';
+        }
+        // Gestion du clic sur le bouton déconnexion
+        const boutonDeconnexion = document.getElementById('bouton-deconnexion');
+        if (boutonDeconnexion) {
+            boutonDeconnexion.onclick = function() {
+                localStorage.removeItem('user_nom');
+                window.location.href = 'index.html';
+            };
+        }
         let topics = [];
         let currentCategory = 'Général';
         let currentTopicIdx = null;
@@ -296,13 +317,15 @@
                 messagesDiv.innerHTML = '<span style="color:#aaa;">Aucun message pour ce sujet.</span>';
             } else {
                 messages.forEach(message => {
-                    const isMe = (localStorage.getItem('user_nom') || 'Anonyme') === message.utilisateur;
+                    // Récupère le nom d'utilisateur selon la structure backend
+                    const nomUtilisateur = message.utilisateur || message.user?.username || 'Anonyme';
+                    const isMe = (localStorage.getItem('user_nom') || 'Anonyme') === nomUtilisateur;
                     messagesDiv.innerHTML += `
                         <div class="forum-message${isMe ? ' me' : ''}">
-                            <div class="forum-message-avatar">${(message.utilisateur||'A')[0].toUpperCase()}</div>
+                            <div class="forum-message-avatar">${nomUtilisateur[0].toUpperCase()}</div>
                             <div>
                                 <div class="forum-message-content">${message.contenu}</div>
-                                <div class="forum-message-meta">${message.utilisateur || 'Anonyme'} • ${new Date(message.timestamp).toLocaleString()}</div>
+                                <div class="forum-message-meta">${nomUtilisateur} • ${new Date(message.timestamp || message.created_at || Date.now()).toLocaleString()}</div>
                             </div>
                         </div>
                     `;

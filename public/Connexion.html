@@ -590,7 +590,7 @@
             registerSubmit.disabled = true;
             document.getElementById('register-spinner').style.display = 'inline-block';
             // Appel API pour enregistrer l'utilisateur
-            fetch('/api/register', {
+            fetch('/api/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
