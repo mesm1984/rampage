@@ -1,0 +1,35 @@
+{
+  "name": "Red Bull Rampage 2024",
+  "short_name": "RB Rampage",
+  "description": "Site officiel de la compétition Red Bull Rampage 2024 - VTT Freeride",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e10600",
+  "orientation": "portrait-primary",
+  "categories": ["sports", "entertainment"],
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "images/logo noir.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo noir.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/red-bull-rampage-2024.jpeg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Page d'accueil Red Bull Rampage 2024"
+    }
+  ]
+}

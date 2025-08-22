@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const { protect } = require('../middleware/auth');
 const bcrypt = require('bcrypt');
 const { User } = require('../models');
 const jwt = require('jsonwebtoken');
@@ -69,10 +70,16 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// Récupérer profil utilisateur connecté
+// GET /api/auth/me
+router.get('/me', protect, (req, res) => {
+  res.status(200).json({ success: true, data: req.user });
+});
+
 // Déconnexion utilisateur
-// POST /api/auth/logout
-router.post('/logout', (req, res) => {
-  res.status(200).json({ message: 'Déconnexion réussie.' });
+// GET /api/auth/logout
+router.get('/logout', protect, (req, res) => {
+  res.status(200).json({ success: true, message: 'Déconnexion réussie.' });
 });
 
 module.exports = router;

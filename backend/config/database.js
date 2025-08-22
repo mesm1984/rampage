@@ -5,28 +5,37 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 // Configuration de la connexion à la base de données
-const sequelize = new Sequelize(
-  process.env.DB_NAME || 'redbull_db',
-  process.env.DB_USER || 'redbull_user',
-  process.env.DB_PASS || 'redbull_password',
-  {
-    host: process.env.DB_HOST || 'db',
-    dialect: 'mysql',
-    logging: process.env.NODE_ENV === 'development' ? console.log : false,
-    pool: {
-      max: 5,
-      min: 0,
-      acquire: 30000,
-      idle: 10000
-    },
-    define: {
-      timestamps: true,
-      underscored: true,
-      createdAt: 'created_at',
-      updatedAt: 'updated_at'
+// Initialisation de Sequelize, utilisant SQLite en mémoire lors de l'environnement de test
+let sequelize;
+if (process.env.NODE_ENV === 'test') {
+  // Utiliser SQLite en mémoire pour les tests
+  sequelize = new Sequelize('sqlite::memory:', {
+    logging: false
+  });
+} else {
+  sequelize = new Sequelize(
+    process.env.DB_NAME || 'redbull_db',
+    process.env.DB_USER || 'redbull_user',
+    process.env.DB_PASS || 'redbull_password',
+    {
+      host: process.env.DB_HOST || 'db',
+      dialect: 'mysql',
+      logging: process.env.NODE_ENV === 'development' ? console.log : false,
+      pool: {
+        max: 5,
+        min: 0,
+        acquire: 30000,
+        idle: 10000
+      },
+      define: {
+        timestamps: true,
+        underscored: true,
+        createdAt: 'created_at',
+        updatedAt: 'updated_at'
+      }
     }
-  }
-);
+  );
+}
 
 // Tester la connexion
 const testConnection = async () => {

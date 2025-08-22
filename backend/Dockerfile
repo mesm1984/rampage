@@ -1,6 +1,6 @@
 
 # Étape 1 : Utiliser une image Node.js officielle comme base
-FROM node:20-alpine
+FROM node:20-alpine3.18
 
 
 # Créer le répertoire de l'application

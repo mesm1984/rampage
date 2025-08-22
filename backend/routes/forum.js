@@ -3,6 +3,7 @@ const router = express.Router();
 
 
 const { ForumCategory, ForumTopic, ForumReply, User } = require('../models');
+const { protect, authorize } = require('../middleware/auth');
 
 // GET /api/forum/topics?category=...
 
@@ -26,8 +27,8 @@ router.get('/topics', async (req, res) => {
 
 // POST /api/forum/topics
 
-// Crée un nouveau sujet
-router.post('/topics', async (req, res) => {
+// Crée un nouveau sujet (authentifié)
+router.post('/topics', protect, async (req, res) => {
   const { title, author, category } = req.body;
   if (!title || !author || !category) return res.status(400).json({ error: 'Champs manquants' });
   try {
@@ -72,8 +73,8 @@ router.get('/messages/:topicId', async (req, res) => {
 
 // POST /api/forum/messages/:topicId
 
-// Ajoute un message à un sujet
-router.post('/messages/:topicId', async (req, res) => {
+// Ajoute un message à un sujet (authentifié)
+router.post('/messages/:topicId', protect, async (req, res) => {
   const { topicId } = req.params;
   const { utilisateur, contenu } = req.body;
   if (!utilisateur || !contenu) return res.status(400).json({ error: 'Champs manquants' });
@@ -109,3 +110,36 @@ router.post('/messages/:topicId', async (req, res) => {
 });
 
 module.exports = router;
+// Endpoints de modération (admin uniquement)
+// Supprimer un topic
+router.delete(
+  '/topics/:id',
+  protect,
+  authorize('admin'),
+  async (req, res) => {
+    try {
+      const topic = await ForumTopic.findByPk(req.params.id);
+      if (!topic) return res.status(404).json({ error: 'Topic inexistant' });
+      await topic.destroy();
+      res.status(204).end();
+    } catch (e) {
+      res.status(500).json({ error: 'Erreur serveur', details: e.message });
+    }
+  }
+);
+// Supprimer un message
+router.delete(
+  '/messages/:id',
+  protect,
+  authorize('admin'),
+  async (req, res) => {
+    try {
+      const reply = await ForumReply.findByPk(req.params.id);
+      if (!reply) return res.status(404).json({ error: 'Message inexistant' });
+      await reply.destroy();
+      res.status(204).end();
+    } catch (e) {
+      res.status(500).json({ error: 'Erreur serveur', details: e.message });
+    }
+  }
+);

@@ -100,7 +100,9 @@ const connectDB = async () => {
     // Synchroniser les modèles avec la base de données
   } catch (error) {
     console.error('Impossible de se connecter à la base de données:', error);
-    process.exit(1);
+    if (process.env.NODE_ENV !== 'test') {
+      process.exit(1);
+    }
   }
 };
 
@@ -113,17 +115,17 @@ process.on('unhandledRejection', (err) => {
 
 // Démarrer le serveur
 const PORT = process.env.PORT || 3000;
-const server = app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Serveur démarré sur http://0.0.0.0:${PORT}`);
-  console.log(`Environnement: ${process.env.NODE_ENV || 'development'}`);
-  
-  // Tester la connexion à la base de données
-  connectDB().then(() => {
-    console.log('Base de données connectée avec succès');
-  }).catch(err => {
-    console.error('Erreur de connexion à la base de données:', err.message);
-  });
-});
+// Initialiser et synchroniser la base de données puis démarrer le serveur si pas en test
+(async () => {
+  const forceSync = process.env.NODE_ENV === 'test';
+  await db.sequelize.sync({ force: forceSync });
+  if (process.env.NODE_ENV !== 'test') {
+    const server = app.listen(PORT, '0.0.0.0', () => {
+      console.log(`Serveur démarré sur http://0.0.0.0:${PORT}`);
+      console.log(`Environnement: ${process.env.NODE_ENV || 'development'}`);
+    });
+  }
+})();
 
 // Gestion des erreurs non capturées
 process.on('uncaughtException', (err) => {
@@ -131,4 +133,6 @@ process.on('uncaughtException', (err) => {
   server.close(() => process.exit(1));
 });
 
+// Exporter également le serveur pour la fermeture dans les tests
+// Exporter app et db pour les tests (serveur non démarré en test)
 module.exports = { app, db };
