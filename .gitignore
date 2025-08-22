@@ -43,10 +43,16 @@ Vagrantfile
 *.swp
 *.swo
 
-# Fichiers d'environnement
+# Fichiers d'environnement et secrets - CRITIQUE SÉCURITÉ
 .env
-.env.*.local
+.env.*
 !.env.example
+PASSWORDS_BACKUP.txt
+secrets/
+*.pem
+*.key
+*.crt
+ssl/
 
 # Fichiers de test
 /coverage/
