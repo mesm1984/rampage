@@ -1,0 +1,37 @@
+{
+  "name": "redbull-rampage-performance",
+  "version": "2.1.0",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "build:analyze": "webpack-bundle-analyzer dist/js/*.js",
+    "optimize:images": "node scripts/optimize-images.js",
+    "lighthouse": "lighthouse --output json --output html --form-factor=mobile --throttling-method=devtools --chrome-flags=\"--headless\" http://localhost:3000",
+    "performance:test": "npm run lighthouse && node scripts/performance-budget.js"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "compression-webpack-plugin": "^10.0.0",
+    "babel-loader": "^9.1.2",
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "postcss-loader": "^7.3.3",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "image-webpack-loader": "^8.1.0",
+    "webpack-bundle-analyzer": "^4.9.0",
+    "lighthouse": "^10.4.0",
+    "sharp": "^0.32.1",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2"
+  }
+}

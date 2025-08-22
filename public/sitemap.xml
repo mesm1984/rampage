@@ -3,21 +3,62 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <!-- URLs du site -->
+    <!-- Page d'accueil -->
     <url>
-        <loc>https://www.votresite.com/</loc>
-        <lastmod>2024-06-01</lastmod>
+        <loc>https://redbull-rampage.com/</loc>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    
+    <!-- Galerie -->
     <url>
-        <loc>https://www.votresite.com/classement/hommes</loc>
-        <lastmod>2024-06-01</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://redbull-rampage.com/galerie.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Podiums -->
+    <url>
+        <loc>https://redbull-rampage.com/Podiums.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
         <priority>0.9</priority>
     </url>
+    
+    <!-- Classement Masculin -->
     <url>
-        <loc>https://www.votresite.com/classement/femmes</loc>
+        <loc>https://redbull-rampage.com/Classement_Masculin.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Classement Féminin -->
+    <url>
+        <loc>https://redbull-rampage.com/Classement_Feminin.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Forum -->
+    <url>
+        <loc>https://redbull-rampage.com/Forum.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Connexion -->
+    <url>
+        <loc>https://redbull-rampage.com/Connexion.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>
         <lastmod>2024-06-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
