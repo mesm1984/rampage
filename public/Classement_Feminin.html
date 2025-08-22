@@ -247,33 +247,11 @@
             <p>&copy; 2024 Red Bull Rampage. Tous droits réservés.</p>
         </div>
     </footer>
-    <!-- Scripts -->
-    <script src="js/scroll-header.js"></script>
-    
-    <!-- Conteneur du chatbot -->
-    <div id="chatbot-container">
-        <div class="chatbot-header">
-            <h3>Assistant VTT Freeride</h3>
-            <button class="chatbot-close" aria-label="Fermer le chatbot">&times;</button>
-        </div>
-        <div class="chatbot-messages" role="log" aria-live="polite">
-            <!-- Les messages s'afficheront ici -->
-        </div>
-        <div class="chatbot-input-container">
-            <input type="text" class="chatbot-input" placeholder="Posez votre question..." aria-label="Votre message">
-            <button class="chatbot-send" aria-label="Envoyer le message">Envoyer</button>
-        </div>
-    </div>
-    
-    <!-- Bouton de bascule du chatbot -->
-    <button class="chatbot-toggle" aria-expanded="false" aria-label="Ouvrir le chat">
-        <i class="fas fa-comment-dots"></i>
-    </button>
-    
-    <!-- Le chatbot sera chargé dynamiquement par include-chatbot.js -->
-    <!-- Chatbot Red Bull Rampage -->
-    <link rel="stylesheet" href="css/chatbot.css">
-    <script src="js/chatbot.js" defer></script>
+    <!-- Scripts principaux -->
+    <script src="js/scroll-header.js" defer></script>
+    <script src="js/menu-mobile.js" defer></script>
+    <!-- Inclusion dynamique du chatbot -->
+    <script src="js/include-chatbot.js" defer></script>
 </body>
 </html>
 

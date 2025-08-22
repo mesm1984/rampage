@@ -31,6 +31,8 @@ const publicPath = path.join(__dirname, '..', 'public');
 // Servir les fichiers statiques du dossier public
 
 app.use(express.static(publicPath));
+// Servir les templates du chatbot
+app.use('/templates', express.static(path.join(__dirname, '..', 'templates')));
 app.use('/data', express.static(path.join(__dirname, '../data')));
 app.use('/data', express.static(dataPath, {
   setHeaders: (res, filePath) => {
@@ -60,6 +62,16 @@ app.get('/test-faqs', (req, res) => {
     message: 'Fichier FAQs non trouvé',
     path: faqPath,
     exists: false
+  });
+});
+// Endpoint pour retourner le fichier faqs.json utilisé par le chatbot
+app.get('/api/faqs', (req, res) => {
+  const faqFile = path.join(dataPath, 'faqs.json');
+  res.sendFile(faqFile, err => {
+    if (err) {
+      console.error('Erreur lors de l\'envoi de faqs.json:', err);
+      res.status(500).json({ success: false, message: 'Erreur serveur lors du chargement des FAQs' });
+    }
   });
 });
 

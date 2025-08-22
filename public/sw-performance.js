@@ -22,7 +22,6 @@ const STATIC_FILES = [
   '/css/performance-optimized.css',
   '/js/chatbot.js',
   '/js/forum-api.js',
-  '/js/arrow-to-top.js',
   '/images/logo noir.jpg',
   '/manifest.json'
 ];
