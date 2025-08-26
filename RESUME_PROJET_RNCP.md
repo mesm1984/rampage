@@ -24,7 +24,7 @@
 ### **Semaine 7 : Déploiement**
 ✅ Configuration production
 ✅ CI/CD avec GitHub Actions
-✅ Hébergement cloud sécuriséeb full-stack avec forum interactif  
+✅ Hébergement cloud sécurisé full-stack avec forum interactif  
 **Objectif :** Présenter la compétition de VTT Freeride avec galerie, podiums, classements et forum communautaire
 
 ---
