@@ -70,3 +70,6 @@ git push
 
 ---
 **🔥 RÈGLE D'OR** : Si c'est secret, ça ne va JAMAIS sur Git !
+
+
+

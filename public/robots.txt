@@ -2,35 +2,15 @@
 User-agent: *
 Allow: /
 
-# Fichiers et dossiers à ignorer
-Disallow: /app/
-Disallow: /bootstrap/
-Disallow: /config/
+# Dossiers techniques à protéger
+Disallow: /backend/
 Disallow: /database/
 Disallow: /node_modules/
-Disallow: /resources/
-Disallow: /routes/
-Disallow: /storage/
-Disallow: /tests/
-Disallow: /vendor/
-Disallow: /_debugbar/
-Disallow: /_ignition/
-Disallow: /horizon/
-Disallow: /telescope/
 
-# Fichiers à ignorer
-Disallow: /*.php$
+# Fichiers de configuration à ignorer
 Disallow: /*.json$
-Disallow: /*.lock$
+Disallow: /*.md$
 Disallow: /*.sql$
-Disallow: /*.txt$
-Disallow: /*.xml$
-Disallow: /*.yml$
-Disallow: /*.yaml$
-Disallow: /*.env$
-Disallow: /*.htaccess$
-Disallow: /*.gitignore$
-Disallow: /*.editorconfig$
 
-# Sitemap
-Sitemap: https://www.votresite.com/sitemap.xml
+# Sitemap (à configurer après déploiement)
+# Sitemap: /sitemap.xml
